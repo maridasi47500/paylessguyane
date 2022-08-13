@@ -1,0 +1,36 @@
+<%= form_with(model: bonsplan, local: true) do |form| %>
+  <% if bonsplan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bonsplan.errors.count, "error") %> prohibited this bonsplan from being saved:</h2>
+
+      <ul>
+        <% bonsplan.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :othertitle %>
+    <%= form.text_field :othertitle %>
+  </div>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content, style: "width: 100%;" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

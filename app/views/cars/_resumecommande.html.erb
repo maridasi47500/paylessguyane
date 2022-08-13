@@ -1,0 +1,113 @@
+ <h2 class="h-like-d c-bl-c d-block d-lg-none">Résumé de la commande :</h2>
+                    <div id="sticky-wp" class="pt-30 pt-15-md">
+                        <section class="resa-aside aos-init" data-aos="fade-left" data-aos-delay="100">
+                            <header class="header">
+                                <div class="category">compact</div>
+                                <h2 class="title"><%=car.categorie%>, <em>ou équivalent</em></h2>
+                                <a href="/reservation">
+                                    <button type="button" class="btn-edition">
+                                        <i class="material-icons">edit</i>
+                                    </button>
+                                </a>
+                            </header>
+                            <!-- /.header -->
+                            <div class="content-wp">
+                                <div class="car-wp">
+                                                                            <figure class="img">
+                                                                              <img src="/assets/<%=car.image%>" alt="location voiture en Guyane : <%=car.name%>" class="img-fluid">
+                                        </figure>
+                                                                        <div class="icons-wp">
+                                        <div class="row">
+                                              <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-luggage"></span>
+            <span class="txt"><%=car.bagages%> bagages</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <%if car.clim%>
+            <div class="col-md-4 col-sm-6 col-4">
+            <div class="car-icon">
+                <span class="sprite car-clim"></span>
+                <span class="txt">Clim.</span>
+            </div><!-- .car-icon -->
+        </div><!-- .col-4  -->
+      <%end%>
+        <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-box"></span>
+            <span class="txt"><%=car.manuelle ? t('car.manuelle') : t('car.auto')%></span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-gazoil"></span>
+            <span class="txt"><%=car.essence%></span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-door"></span>
+            <span class="txt"><%=car.portes%> portes</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-people"></span>
+            <span class="txt"><%=car.places%> places</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+</div><!-- .row -->                                    </div>
+                                    <!-- /.icons-wp -->
+                                </div>
+                                <!-- /.car-wp -->
+                                <div class="options-wp">
+                                    <ul>
+                                        <li class="item">
+                                            <span class="txt">Prix de base</span>
+                                            <span class="price"><%=car.min_price%>€</span>
+                                        </li>
+                                        <li class="item" style="display: <%=car.typecommande == 'ligne' ? 'block' : 'none'%>;">
+                                            <span class="txt">Assurances</span>
+                                            <span class="price"><span id="assurances-montant">0</span> €</span>
+                                        </li>
+                                        <li class="item" style="display: <%=car.typecommande == 'ligne' ? 'block' : 'none'%>;">
+                                            <span class="txt">Options</span>
+                                            <span class="price"><span id="options-montant">0</span> €</span>
+                                        </li>
+                                        <li class="item" style="display: <%=car.typecommande == 'ligne' ? 'block' : 'none'%>;">
+                                            <span class="txt">Réduction <em>*</em></span>
+                                            <span class="price">-<span id="reductions-montant">0</span> €</span>
+                                        </li>
+                                        <li>
+                                            <p id="reductions-description" class="txt-info"></p>
+                                        </li>
+                                        
+                                        <li class="item">
+                                            <span class="txt">Kilométrages inclus</span>
+                                            <span class="price"><%= car.typecommande == 'sans_km' ? 0 : 350%> km</span>
+                                        </li>
+
+                                        <li>
+                                            <p class="txt-info">0,32 €/km supplémentaire</p>
+                                        </li>
+                                        <li class="item except">
+                                            <span class="txt">Prix total</span>
+                                            <span class="price"><span id="total"><%=car.totalprice%></span> €</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.options-wp -->
+                            </div>
+                            <!-- /.content-wp -->
+                            <button type="submit" class="btn-wp choisirvoiture">
+                                <span class="txt">Continuer</span>
+                                <i class="material-icons">arrow_forward</i>
+                            </button>
+                            <!-- /.btn-wp -->
+                        </section>
+                        <!-- /.resa-aside -->
+                        <a href="/cgl" class="btn-cgv trigger-modal" data-align="modal-dialog-centered" data-size="modal-lg">Conditions générales de ventes</a>
+                        <!-- /.btn-cgv -->
+                    </div>
+                    <!-- /#sticky-wp -->

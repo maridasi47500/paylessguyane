@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cars</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Categorie</th>
+      <th>Bagages</th>
+      <th>Clim</th>
+      <th>Manuelle</th>
+      <th>Essence</th>
+      <th>Portes</th>
+      <th>Places</th>
+      <th>Min price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cars.each do |car| %>
+      <tr>
+        <td><%= car.name %></td>
+        <td><%= image_tag "/assets/"+car.image, class: "littlepic" %></td>
+        <td><%= car.categorie %></td>
+        <td><%= car.bagages %></td>
+        <td><%= car.clim ? t('words.yes') : t('words.no') %></td>
+        <td><%= car.manuelle ? t('words.yes') : t('words.no') %></td>
+        <td><%= car.essence %></td>
+        <td><%= car.portes %></td>
+        <td><%= car.places %></td>
+        <td><%= car.min_price %></td>
+        <td><%= link_to 'Show', car %></td>
+        <td><%= link_to 'Edit', edit_car_path(car) %></td>
+        <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Car', new_car_path %>

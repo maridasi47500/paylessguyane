@@ -1,0 +1,2 @@
+module AssurancesHelper
+end

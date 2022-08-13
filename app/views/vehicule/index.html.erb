@@ -1,0 +1,30 @@
+<%=content_for :monjs do%>
+  $('.btn-resa').click(function(){
+  $('#resa-inner-wp')[0].id="";
+  });
+
+<%end%>
+    <main id="main">
+        <header id="header-inner">
+            <div class="container">
+                <h1 class="title aos-init aos-animate" data-aos="zoom-in">Nos voitures de location en Guyane</h1>
+                                    <div class="wysiwyg-wp mt-20"><p>Pour son ouverture, Payless agence de <strong>location de voiture en Guyane</strong> met à votre disposition les catégories économique type Kia Picanto et citadine type Hyundai I20. La flotte de véhicules de notre agence de location de voiture en Guyane va très rapidement s'élargir afin de vous proposer des 4x4, SUV ou Automatique, en passant par les utilitaires et minibus.
+Vous pouvez <strong>louer</strong> la <strong>voiture en Guyane</strong> dont vous avez besoin. Nos <a href="/contact">agences</a> de <strong>location de voitures</strong> Payless sont à votre disposition à <strong>Cayenne</strong> et <strong>Saint-Laurent du Maroni</strong>.</p>
+</div>
+                                <div class="mt-25 aos-init" id="resa-trigger" data-aos="fade" data-aos-delay="300">
+                    <button class="btn-a large">Réserver mon véhicule</button>
+                </div>
+            </div>
+        </header>
+        <section id="resa-inner-wp">
+    <%=render 'reservation/form'%>
+</section>
+<!-- /#resa-inner-wp -->        <div class="container">
+            <div class="row mt-30 mt-20-sm mt-5-xs">
+               <%=render partial: "cars/vehicule", collection: @cars, as: :car%>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </main><!-- #main-->
+

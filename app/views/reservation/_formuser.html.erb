@@ -1,0 +1,5 @@
+<%=form_with url: paiement_banque_path, scope: "", model: user, html: {id: "newuser"} do |t|%>
+  <%User.mykeys.each do |y|%>
+  <%=t.hidden_field y%>
+<%end%>
+<%end%>

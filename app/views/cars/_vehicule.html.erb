@@ -1,0 +1,64 @@
+<div class="col-lg-4 col-sm-6 mb-90 mb-80-md resa-car aos-init" data-aos="zoom-in" data-carrosserie="4">
+    <div class="resa-step-1 ">
+        <article class="content-item">
+            <div class="col-top">
+                                <figure class="img-wp magnific-popup">
+                                  <img src="/assets/<%=car.image%>" alt="<%=car.name%>" class="img-fluid">
+                                                                        <a href="/uploads/article/microcar-2.jpg" class="btn-popup" data-effect="mfp-zoom-out">
+                                <i class="material-icons">image_search</i>
+                            </a>
+                                                            </figure><!-- .img-wp -->
+                                <div class="content-txt">
+                    <header>
+                      <h2 class="title-car"><%=car.name%> <em>ou équivalent</em></h2>
+                        <a href="<%=rentalcarcat_path(id: car.id, cat: car.categorie.parameterize)%>"><h3 class="category">Catégorie <%=car.categorie%></h3></a>
+                                            </header>
+                    <div class="row">
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-luggage"></span>
+            <span class="txt"><%=car.bagages%> bagages</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <%if car.clim%>
+            <div class="col-md-4 col-sm-6 col-4">
+            <div class="car-icon">
+                <span class="sprite car-clim"></span>
+                <span class="txt">Clim.</span>
+            </div><!-- .car-icon -->
+        </div><!-- .col-4  -->
+      <%end%>
+        <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-box"></span>
+            <span class="txt"><%=car.manuelle ? t('car.manuelle') : t('car.auto')%></span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-gazoil"></span>
+            <span class="txt"><%=car.essence%></span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-door"></span>
+            <span class="txt"><%=car.portes%> portes</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-people"></span>
+            <span class="txt"><%=car.places%> places</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+</div><!-- .row -->                                    </div><!-- .content-txt -->
+            </div><!-- .col-top -->
+            <div class="col-bottom">
+                                                        <div class="btn-wp">
+                        <a href="/vehicule#resa-search" class="btn-resa w-full resa-anchor trigger-resa-nav">Je réserve<i class="material-icons">arrow_forward_ios</i></a>
+                    </div><!-- .btn-wp -->
+                            </div><!-- .col-bottom -->
+        </article><!-- .content-item -->
+    </div><!-- .resa-step-1 -->
+</div><!-- .col-lg-4  -->

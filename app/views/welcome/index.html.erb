@@ -1,0 +1,93 @@
+  <main id="main">
+        <section id="resa-home-wp">
+            <div class="container">
+                                <div class="promo-wp">
+                    <span class="txt-small">A partir de</span>
+                    <span class="txt-large">8€/j
+                                                <sup>*</sup>
+                                            </span>
+                </div>
+                <!-- /.promo-wp -->
+                                <div class="resa-wp">
+                    <h1 class="h-like-a c-bl-c text-center text-lg-left">Location de voitures en Guyane au Meilleur rapport qualité/prix</h1>
+                    <div class="star-wp">
+                        <span class="sprite star ml-10"></span>5/5
+                    </div>
+                    <%=render 'reservation/form'%> 
+                    <img src="/assets/resa-left-bg.png" class="img-fluid aos-init" alt="location de voiture Guyane  - Payless Guyane" data-aos="fade-left" data-aos-delay="200">
+                </div>
+                <!-- /#form-wp -->
+                                <div class="mandatory"><sup>*</sup> +0,28€ / km parcouru pour une catégorie A </div>
+                                <!-- /.mandatory -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#resa-home-wp -->
+                <section class="bg-gy-a pv-75 pv-50-md pv-30-sm">
+            <div class="container">
+                <header data-aos="fade" class="aos-init">
+                    <h2 class="h-like-b text-center c-bl-c">Les bons plans</h2>
+                </header>
+                <div class="row">
+
+
+<%=render partial: 'bonplans/welcome', collection: @bonplans, as: :bonplan%>
+
+                    <!-- /.col-md-4 -->
+                                    </div>
+                <!-- /.row -->
+                <div class="text-center mt-50 mt-30-sm mt-15-xs aos-init" data-aos="fade">
+                    <a href="/bons-plans" class="btn-a large">Voir tous les bons plans</a>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+                <section class="home-about">
+            <img src="/assets/about-left-bg.jpg" class="img-left aos-init aos-animate" alt="location de voitures en Guyane - Payless Guyane" data-aos="fade-right">
+            <img src="/assets/about-right-top.png" class="img-right-top aos-init aos-animate" alt="location voiture Guyane pas cher - Payless Guyane" data-aos="fade-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-3 col-lg-5 offset-lg-4 col-md-8 offset-md-0">
+                        <h2 class="h-like-b c-bl-c">Payless, votre spécialiste de la location de voitures à prix discount en Guyane</h2>
+                        <div class="txt c-gy-c mt-30 mt-20-sm mt-10-xs mb-0 wysiwyg-wp"><p>Besoin d’une <strong>location de voitures en Guyane</strong> à prix pas cher, Payless Guyane, votre nouveau loueur de <strong>location de voitures</strong> vous propose deux agences à <strong>Cayenne</strong> et <strong>Saint-Laurent du Maroni</strong></p>
+<p>Pour un séjour de courte ou longue durée en <strong>Guyane</strong>, Payless <strong>location de voitures</strong> est la solution qu’il vous faut grâce à ces deux formules de <strong>location de voiture en Guyane pas cher</strong> : avec ou sans kilomètres inclus. Choisissez de ne payer que ce que vous consommez, idéal pour les longs séjours en <strong>Guyane</strong>.</p>
+<p>N’hésitez pas à faire appel à Payless qui propose des <strong>voitures de location pas cher en Guyane</strong> en alliant bon plans, prestations de qualité et petit prix.</p>
+<p>Parmi nos <a href="/vehicule">voitures</a> en <strong>location</strong>, vous pourrez choisir entre les modèles économique ou citadine en passant par nos utilitaires, afin de répondre à tous vos besoins.</p>
+<p>Payless Guyane est une marque de Budget <strong>location de voitures en Guyane</strong>. Vous bénéficiez ainsi de l’expérience et d’un service de qualité proposé par Budget, acteur international incontournable de la <strong>location de voitures</strong> présent depuis plus de 10 ans en <strong>Guyane</strong>.</p>
+<p>Retrouvez-nous dans vos agences Budget à <strong>Cayenne</strong> et <strong>Saint Laurent du Maroni</strong>.</p>
+</div>
+                        <div class="mt-30">
+                            <a href="/contact" class="btn-a large">Nos agences</a>
+                        </div>
+                    </div>
+                    <!-- /.col-md-8 -->
+                </div>
+                <!-- /.row -->
+                <div class="text-center text-md-right img-car">
+                    <img src="/assets/about-right-bottom.png" class="img-right-bottom img-fluid aos-init" alt="location de voiture Cayenne - Payless Guyane" data-aos="fade-up">
+                </div>
+                <!-- /.text-right -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <section class="blog-cta">
+            <div class="container">
+                <header class="text-center aos-init" data-aos="fade">
+                    <h2 class="h-like-b c-bl-c "><span class="bg-wh-a ph-10 pv-5">Découvrez la Guyane</span></h2>
+                </header>
+                <div class="row mt-50 mt-30-md mt-15-sm">
+                    <div class="col-lg-10 offset-lg-1">
+                        <figure class="text-center aos-init" data-aos="zoom-in">
+                            <img src="/assets/discover-img.png" class="img-fluid" alt="location de voiture Saint Laurent du Maroni - Payless Guyane">
+                        </figure>
+                    </div>
+                    <!-- /.col-lg-8 -->
+                </div>
+                <!-- /.row -->
+                <div class="text-center mt-50 mt-30-sm mt-15-xs aos-init" data-aos="fade">
+                    <a href="/guyane" class="btn-a large">Découvrez la Guyane</a>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+    </main><!-- #main-->

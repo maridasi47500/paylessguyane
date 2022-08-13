@@ -1,0 +1,56 @@
+TABLE.ONGLETS
+{
+
+}
+.ONGACT
+{
+    padding:1px; margin:10px; width:95%; border:1px solid #cccccc;
+}
+
+TD.OngPSel, TD.ONGPSEL
+{
+    BACKGROUND-POSITION: left bottom;
+    VERTICAL-ALIGN: center;
+    WIDTH: 130px;
+    BACKGROUND-REPEAT: no-repeat;
+    HEIGHT: 30px;
+    TEXT-ALIGN: center;
+    FONT-WEIGHT: bold;
+    COLOR: #3493D0;
+    BACKGROUND-IMAGE: url(images/onglet_select.gif)
+}
+TD.OngP, TD.ONGP
+{
+    BACKGROUND-POSITION: left bottom;
+    VERTICAL-ALIGN: center;
+    WIDTH: 130px;
+    BACKGROUND-REPEAT: no-repeat;
+    HEIGHT: 30px;
+    TEXT-ALIGN: center;
+    BACKGROUND-IMAGE: url(images/onglet_unselect.gif) 
+}
+
+TD.OngVide, TD.ONGVIDE
+{
+    BACKGROUND-POSITION: 50% bottom;
+    BACKGROUND-IMAGE: url(images/onglet_vide.gif);
+    BACKGROUND-REPEAT: repeat-x;
+    TEXT-ALIGN: center
+}
+A.OLien
+{
+    FONT: 9pt Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none; color:#873924
+}
+TD.OngPSel A.OLien
+{
+    COLOR: #ffed00;
+    FONT-WEIGHT: bold
+}
+.LTITCOLONG
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #c2d8ec;
+    TEXT-ALIGN: center
+}

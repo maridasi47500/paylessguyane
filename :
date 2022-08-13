@@ -1,0 +1,537 @@
+
+    
+    <main id="main">
+        <section id="resa-inner-wp">
+    <form action="/reservation" method="get" id="resa-search" class="">
+        <h2 class="sr-only">Réserver son véhicule</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="resa-wp">
+                        <div class="row mt-10 mt-0-xs">
+                            <div class="col-sm-6 pr-20 pr-15-md">
+                                <label class="label" for="datepicker-start">Départ</label>
+                                <div class="row">
+                                    <div class="col-lg-8 col-7">
+                                        <div class="datepicker-wp">
+                                            <input type="text" class="form-control hasDatepicker" id="datepicker-start" name="debut_jour_at" value="08/11/2021" required=""><button type="button" class="ui-datepicker-trigger"><span class="sprite arrow-select"></span></button>
+                                        </div><!-- /.datepicker-wp -->
+                                    </div>
+                                    <!-- /.col-lg-8 -->
+                                    <div class="col-lg-4 col-5 pl-0">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="hour-start" name="debut_minute_at" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                                                                            <option value="00:00">
+                                                            0h00
+                                                        </option>
+                                                                                                            <option value="00:30">
+                                                            0h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="01:00">
+                                                            1h00
+                                                        </option>
+                                                                                                            <option value="01:30">
+                                                            1h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="02:00">
+                                                            2h00
+                                                        </option>
+                                                                                                            <option value="02:30">
+                                                            2h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="03:00">
+                                                            3h00
+                                                        </option>
+                                                                                                            <option value="03:30">
+                                                            3h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="04:00">
+                                                            4h00
+                                                        </option>
+                                                                                                            <option value="04:30">
+                                                            4h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="05:00">
+                                                            5h00
+                                                        </option>
+                                                                                                            <option value="05:30">
+                                                            5h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="06:00">
+                                                            6h00
+                                                        </option>
+                                                                                                            <option value="06:30">
+                                                            6h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="07:00">
+                                                            7h00
+                                                        </option>
+                                                                                                            <option value="07:30">
+                                                            7h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="08:00">
+                                                            8h00
+                                                        </option>
+                                                                                                            <option value="08:30">
+                                                            8h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="09:00">
+                                                            9h00
+                                                        </option>
+                                                                                                            <option value="09:30">
+                                                            9h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="10:00">
+                                                            10h00
+                                                        </option>
+                                                                                                            <option value="10:30">
+                                                            10h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="11:00">
+                                                            11h00
+                                                        </option>
+                                                                                                            <option value="11:30">
+                                                            11h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="12:00">
+                                                            12h00
+                                                        </option>
+                                                                                                            <option value="12:30">
+                                                            12h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="13:00">
+                                                            13h00
+                                                        </option>
+                                                                                                            <option value="13:30">
+                                                            13h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="14:00">
+                                                            14h00
+                                                        </option>
+                                                                                                            <option value="14:30">
+                                                            14h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="15:00">
+                                                            15h00
+                                                        </option>
+                                                                                                            <option value="15:30">
+                                                            15h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="16:00" selected="">
+                                                            16h00
+                                                        </option>
+                                                                                                            <option value="16:30">
+                                                            16h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="17:00">
+                                                            17h00
+                                                        </option>
+                                                                                                            <option value="17:30">
+                                                            17h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="18:00">
+                                                            18h00
+                                                        </option>
+                                                                                                            <option value="18:30">
+                                                            18h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="19:00">
+                                                            19h00
+                                                        </option>
+                                                                                                            <option value="19:30">
+                                                            19h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="20:00">
+                                                            20h00
+                                                        </option>
+                                                                                                            <option value="20:30">
+                                                            20h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="21:00">
+                                                            21h00
+                                                        </option>
+                                                                                                            <option value="21:30">
+                                                            21h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="22:00">
+                                                            22h00
+                                                        </option>
+                                                                                                            <option value="22:30">
+                                                            22h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="23:00">
+                                                            23h00
+                                                        </option>
+                                                                                                            <option value="23:30">
+                                                            23h30
+                                                        </option>
+                                                                                                                                                </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="hour-start" title="16h00"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">16h00</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <div class="col-12 mt-10">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="place" name="debut_lieu_id" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                    <option value="1" selected="">Cayenne centre, zone Galmot</option>
+                                                                                                    <option value="2">Saint Laurent du Maroni</option>
+                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="place" title="Cayenne centre, zone Galmot"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Cayenne centre, zone Galmot</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <!-- /.col-12 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                            <div class="col-sm-6 pl-20 pl-15-md mt-10-xs">
+                                <label class="label" for="datepicker-end">Retour</label>
+                                <div class="row">
+                                    <div class="col-lg-8 col-7">
+                                        <div class="datepicker-wp">
+                                            <input type="text" class="form-control hasDatepicker" id="datepicker-end" name="fin_jour_at" value="15/11/2021" required=""><button type="button" class="ui-datepicker-trigger"><span class="sprite arrow-select"></span></button>
+                                        </div><!-- /.datepicker-wp -->
+                                    </div>
+                                    <!-- /.col-lg-8 -->
+                                    <div class="col-lg-4 col-5 pl-0">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="hour-end" name="fin_minute_at" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                                                                            <option value="00:00">
+                                                            0h00
+                                                        </option>
+                                                                                                            <option value="00:30">
+                                                            0h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="01:00">
+                                                            1h00
+                                                        </option>
+                                                                                                            <option value="01:30">
+                                                            1h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="02:00">
+                                                            2h00
+                                                        </option>
+                                                                                                            <option value="02:30">
+                                                            2h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="03:00">
+                                                            3h00
+                                                        </option>
+                                                                                                            <option value="03:30">
+                                                            3h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="04:00">
+                                                            4h00
+                                                        </option>
+                                                                                                            <option value="04:30">
+                                                            4h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="05:00">
+                                                            5h00
+                                                        </option>
+                                                                                                            <option value="05:30">
+                                                            5h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="06:00">
+                                                            6h00
+                                                        </option>
+                                                                                                            <option value="06:30">
+                                                            6h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="07:00">
+                                                            7h00
+                                                        </option>
+                                                                                                            <option value="07:30">
+                                                            7h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="08:00">
+                                                            8h00
+                                                        </option>
+                                                                                                            <option value="08:30">
+                                                            8h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="09:00">
+                                                            9h00
+                                                        </option>
+                                                                                                            <option value="09:30">
+                                                            9h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="10:00">
+                                                            10h00
+                                                        </option>
+                                                                                                            <option value="10:30">
+                                                            10h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="11:00">
+                                                            11h00
+                                                        </option>
+                                                                                                            <option value="11:30">
+                                                            11h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="12:00">
+                                                            12h00
+                                                        </option>
+                                                                                                            <option value="12:30">
+                                                            12h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="13:00">
+                                                            13h00
+                                                        </option>
+                                                                                                            <option value="13:30">
+                                                            13h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="14:00">
+                                                            14h00
+                                                        </option>
+                                                                                                            <option value="14:30">
+                                                            14h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="15:00">
+                                                            15h00
+                                                        </option>
+                                                                                                            <option value="15:30">
+                                                            15h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="16:00" selected="">
+                                                            16h00
+                                                        </option>
+                                                                                                            <option value="16:30">
+                                                            16h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="17:00">
+                                                            17h00
+                                                        </option>
+                                                                                                            <option value="17:30">
+                                                            17h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="18:00">
+                                                            18h00
+                                                        </option>
+                                                                                                            <option value="18:30">
+                                                            18h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="19:00">
+                                                            19h00
+                                                        </option>
+                                                                                                            <option value="19:30">
+                                                            19h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="20:00">
+                                                            20h00
+                                                        </option>
+                                                                                                            <option value="20:30">
+                                                            20h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="21:00">
+                                                            21h00
+                                                        </option>
+                                                                                                            <option value="21:30">
+                                                            21h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="22:00">
+                                                            22h00
+                                                        </option>
+                                                                                                            <option value="22:30">
+                                                            22h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="23:00">
+                                                            23h00
+                                                        </option>
+                                                                                                            <option value="23:30">
+                                                            23h30
+                                                        </option>
+                                                                                                                                                </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-3" aria-haspopup="listbox" aria-expanded="false" data-id="hour-end" title="16h00"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">16h00</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-3" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <div class="col-12 mt-10">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="place_fin" name="fin_lieu_id" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                    <option value="1" selected="">Cayenne centre, zone Galmot</option>
+                                                                                                    <option value="2">Saint Laurent du Maroni</option>
+                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" data-id="place_fin" title="Cayenne centre, zone Galmot"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Cayenne centre, zone Galmot</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-4" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <!-- /.col-12 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="btn-wp mt-20 text-center">
+                            <button type="submit" class="btn-a large">Voir les véhicules disponibles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-md-8 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </form>
+</section>
+<!-- /#resa-inner-wp -->        <form method="POST" action="/reservation/2" accept-charset="UTF-8" id="devis"><input name="_token" type="hidden" value="UKshsoNWhsT6Bh2rSmMZ6KgMMzOtez95Xf0hieCT">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 pt-30 pt-20-xs pr-50 pr-30-lg pr-15-md aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <h1 class="h-like-a bordered c-bl-c">Votre <span class="c-bl-a">devis</span></h1>
+                    <section class="mt-25">
+                        <h2 class="h-like-d c-bl-c">Prestations incluses</h2>
+                        <ul class="resa-included mt-10">
+                            <li class="item">
+                                <i class="material-icons">check_circle_outline</i>
+                                <span class="txt">Assurance responsabilité civile et accidents causés au tiers</span>
+                            </li>
+                            <li class="item">
+                                <i class="material-icons">check_circle_outline</i>
+                                <span class="txt">Assurance dommages et vol du véhicule avec une franchise incompressible</span>
+                            </li>
+                            <li class="item">
+                                <i class="material-icons">check_circle_outline</i>
+                                <span class="txt">Assistance technique au véhicule 24h/24</span>
+                            </li>
+                        </ul><!-- .resa-included -->
+                    </section>
+                    <%@car.options.each do |t|%>
+                                            <section class="resa-step-2 mt-30 mt-20-sm">
+                            <header class="header">
+                                <h2 class="h-like-d">Assurances</h2>
+                            </header><!-- .header -->
+                            <ul class="resa-options row" id="options" data-ajax-url="/reservation/2/tarif">
+                                                                                                                                                        <li class="col-md-6 mt-20 mt-10-xs">
+                                                <div class="item ">
+                                                                                                            <button type="button" class="more-info-trigger" data-container="body" data-toggle="popover" data-placement="right" data-html="true" data-trigger="focus" title="" data-content="En souscrivant au rachat partiel de franchise FNRAV, la franchise du véhicule est divisée par deux." data-original-title="Information sur l&#39;option Rachat partiel de la franchise accident">
+                                                            <i class="material-icons">help_outline</i>
+                                                        </button><!-- .more-info-trigger -->
+                                                                                                        <div class="col-option-1">
+                                                        <div class="checkboxradio-wp">
+                                                            <input type="checkbox" name="options[1]" id="checkbox_1" value="1">
+                                                            <label for="checkbox_1">Rachat partiel de la franchise accident<br><em data-tarif="49">Tarif : 49 €</em></label>
+                                                        </div><!-- .checkradio-wp -->
+                                                                                                            </div><!-- .col-1 -->
+                                                </div><!-- .item -->
+                                            </li>
+                                                                                                                                                                                                                                    <li class="col-md-6 mt-20 mt-10-xs">
+                                                <div class="item ">
+                                                                                                            <button type="button" class="more-info-trigger" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-trigger="focus" title="" data-content="Roulez en toute sérénité en souscrivant au rachat total de franchise SLI. Vous bénéficiez ainsi d’une franchise accident à 0 €." data-original-title="Information sur l&#39;option Rachat total de la franchise accident">
+                                                            <i class="material-icons">help_outline</i>
+                                                        </button><!-- .more-info-trigger -->
+                                                                                                        <div class="col-option-1">
+                                                        <div class="checkboxradio-wp">
+                                                            <input type="checkbox" name="options[2]" id="checkbox_2" value="1">
+                                                            <label for="checkbox_2">Rachat total de la franchise accident<br><em data-tarif="98">Tarif : 98 €</em></label>
+                                                        </div><!-- .checkradio-wp -->
+                                                                                                            </div><!-- .col-1 -->
+                                                </div><!-- .item -->
+                                            </li>
+                                                                                                                                                                                                                                                                                                        <li class="col-md-6 mt-20 mt-10-xs">
+                                                <div class="item ">
+                                                                                                            <button type="button" class="more-info-trigger" data-container="body" data-toggle="popover" data-placement="left" data-html="true" data-trigger="focus" title="" data-content="L&#39;assurance bris de glace WTC vous assure tout dommage sur les vitres, pare-brise, lunette arrière et optiques." data-original-title="Information sur l&#39;option Rachat bris de glace">
+                                                            <i class="material-icons">help_outline</i>
+                                                        </button><!-- .more-info-trigger -->
+                                                                                                        <div class="col-option-1">
+                                                        <div class="checkboxradio-wp">
+                                                            <input type="checkbox" name="options[3]" id="checkbox_3" value="1">
+                                                            <label for="checkbox_3">Rachat bris de glace<br><em data-tarif="28">Tarif : 28 €</em></label>
+                                                        </div><!-- .checkradio-wp -->
+                                                                                                            </div><!-- .col-1 -->
+                                                </div><!-- .item -->
+                                            </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                        </ul><!-- .resa-options -->
+                        </section><!-- .resa-step-2 -->
+                                            <section class="resa-step-2 mt-30 mt-20-sm">
+                            <header class="header">
+                                <h2 class="h-like-d">Options</h2>
+                            </header><!-- .header -->
+                            <ul class="resa-options row" id="options" data-ajax-url="/reservation/2/tarif">
+                                                                                                                                                                                                                                                                                                <li class="col-md-6 mt-20 mt-10-xs">
+                                                <div class="item select-active">
+                                                                                                        <div class="col-option-1">
+                                                        <div class="checkboxradio-wp">
+                                                            <input type="checkbox" name="options[5]" id="checkbox_5" value="1">
+                                                            <label for="checkbox_5">Siège bébé<br><em data-tarif="49">Tarif : 49 €</em></label>
+                                                        </div><!-- .checkradio-wp -->
+                                                                                                                    <div class="quantite disabled">
+                                                                <label class="label" for="select_5">Quantité</label>
+                                                                <div class="selectpicker-wp except-quantity">
+                                                                  <div class="dropdown bootstrap-select select-quantite fit-width"><select id="select_5" class="select-quantite selectpicker" tabindex="-98" data-width="fit" disabled="">
+                                                                                                                                                    <option value="1">1</option>
+                                                                                                                                                    <option value="2">2</option>
+                                                                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-5" aria-haspopup="listbox" aria-expanded="false" data-id="select_5" title="1"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">1</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-5" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                                                </div>
+                                                            </div>
+                                                                                                            </div><!-- .col-1 -->
+                                                </div><!-- .item -->
+                                            </li>
+                                                                                                                                                                                                                                                                                                        <li class="col-md-6 mt-20 mt-10-xs">
+                                                <div class="item select-active">
+                                                                                                        <div class="col-option-1">
+                                                        <div class="checkboxradio-wp">
+                                                            <input type="checkbox" name="options[6]" id="checkbox_6" value="1">
+                                                            <label for="checkbox_6">Rehausseur<br><em data-tarif="35">Tarif : 35 €</em></label>
+                                                        </div><!-- .checkradio-wp -->
+                                                                                                                    <div class="quantite disabled">
+                                                                <label class="label" for="select_6">Quantité</label>
+                                                                <div class="selectpicker-wp except-quantity">
+                                                                    <div class="dropdown bootstrap-select select-quantite fit-width"><select id="select_6" class="select-quantite selectpicker" tabindex="-98" data-width="fit" disabled="">
+                                                                                                                                                    <option value="1">1</option>
+                                                                                                                                                    <option value="2">2</option>
+                                                                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-6" aria-haspopup="listbox" aria-expanded="false" data-id="select_6" title="1"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">1</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-6" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                                                </div>
+                                                            </div>
+                                                                                                            </div><!-- .col-1 -->
+                                                </div><!-- .item -->
+                                            </li>
+                                                                                                                                                                                                                                    <li class="col-md-6 mt-20 mt-10-xs">
+                                                <div class="item ">
+                                                                                                        <div class="col-option-1">
+                                                        <div class="checkboxradio-wp">
+                                                            <input type="checkbox" name="options[7]" id="checkbox_7" value="1">
+                                                            <label for="checkbox_7">GPS<br><em data-tarif="49">Tarif : 49 €</em></label>
+                                                        </div><!-- .checkradio-wp -->
+                                                                                                            </div><!-- .col-1 -->
+                                                </div><!-- .item -->
+                                            </li>
+                                                                                                                                                                                                                                    <li class="col-md-6 mt-20 mt-10-xs">
+                                                <div class="item ">
+                                                                                                        <div class="col-option-1">
+                                                        <div class="checkboxradio-wp">
+                                                            <input type="checkbox" name="options[9]" id="checkbox_9" value="1">
+                                                            <label for="checkbox_9">Assurance Annulation<br><em data-tarif="25">Tarif : 25 €</em></label>
+                                                        </div><!-- .checkradio-wp -->
+                                                                                                            </div><!-- .col-1 -->
+                                                </div><!-- .item -->
+                                            </li>
+                                                                                                                                                                                                                                    <li class="col-md-6 mt-20 mt-10-xs">
+                                                <div class="item select-active">
+                                                                                                            <button type="button" class="more-info-trigger" data-container="body" data-toggle="popover" data-placement="right" data-html="true" data-trigger="focus" title="" data-content="Partagez le volant et profitez en toute tranquillité de votre séjour." data-original-title="Information sur l&#39;option Conducteurs supplémentaires">
+                                                            <i class="material-icons">help_outline</i>
+                                                        </button><!-- .more-info-trigger -->
+                                                                                                        <div class="col-option-1">
+                                                        <div class="checkboxradio-wp">
+                                                            <input type="checkbox" name="options[4]" id="checkbox_4" value="1">
+                                                            <label for="checkbox_4">Conducteurs supplémentaires<br><em data-tarif="35">Tarif : 35 €</em></label>
+                                                        </div><!-- .checkradio-wp -->
+                                                                                                                    <div class="quantite disabled">
+                                                                <label class="label" for="select_4">Quantité</label>
+                                                                <div class="selectpicker-wp except-quantity">
+                                                                    <div class="dropdown bootstrap-select select-quantite fit-width"><select id="select_4" class="select-quantite selectpicker" tabindex="-98" data-width="fit" disabled="">
+                                                                                                                                                    <option value="1">1</option>
+                                                                                                                                                    <option value="2">2</option>
+                                                                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-7" aria-haspopup="listbox" aria-expanded="false" data-id="select_4" title="1"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">1</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-7" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                                                </div>
+                                                            </div>
+                                                                                                            </div><!-- .col-1 -->
+                                                </div><!-- .item -->
+                                            </li>
+                                                                                                                                        </ul><!-- .resa-options -->
+                        </section><!-- .resa-step-2 -->
+                                    </div>
+                <!-- /.col-lg-8 -->
+                <aside class="col-lg-4 mt-20-md">
+                   <%=render 'cars/resumecommande', car: @car%>
+                </aside>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        </form>
+    </main><!-- #main-->

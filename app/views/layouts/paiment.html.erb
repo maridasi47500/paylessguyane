@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0394)/paiement.cgi?version=3.0&TPE=1222382&date=01/11/2021:12:59:22&montant=105EUR&reference=002109&MAC=943a3941fea608f64c6a4ce6c76bb5366b3e8a37&url_retour=https://www.payless-guyane.com&url_retour_ok=https://www.payless-guyane.com/paiement/effectue&url_retour_err=https://www.payless-guyane.com/paiement/refuse&lgue=FR&societe=payless&texte-libre=&mail=soeur@gmail.om -->
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Monetico Paiement &gt; Espace de paiement sécurisé par carte bancaire</title>
+
+<link type="text/css" rel="stylesheet" href="./Monetico Paiement _ Espace de paiement sécurisé par carte bancaire_files/env.css">
+<link type="text/css" rel="stylesheet" href="./Monetico Paiement _ Espace de paiement sécurisé par carte bancaire_files/v3commun.css">
+<link type="text/css" rel="stylesheet" href="./Monetico Paiement _ Espace de paiement sécurisé par carte bancaire_files/v3base.css">
+<link type="text/css" rel="stylesheet" href="./Monetico Paiement _ Espace de paiement sécurisé par carte bancaire_files/v3couleurs.css">
+<link type="text/css" rel="stylesheet" href="./Monetico Paiement _ Espace de paiement sécurisé par carte bancaire_files/stylegroupe.css">
+<link type="text/css" rel="stylesheet" href="./Monetico Paiement _ Espace de paiement sécurisé par carte bancaire_files/StyleGroupeOnglet.css">
+    <%Dir.children(Rails.root.to_s+'/app/assets/stylesheets/'+params[:controller]).each do |jsfile|%>
+    <%= stylesheet_link_tag params[:controller]+'/'+jsfile %>
+    <%end%>
+    <%= javascript_include_tag 'application' %>
+    <%Dir.children(Rails.root.to_s+'/app/assets/javascripts/'+params[:controller]).each do |jsfile|%>
+    <%= javascript_tag params[:controller]+'/'+jsfile.gsub('.js','') %>
+    <%end%>
+
+
+<style type="text/css">
+#resa-header a[href=^<%=request.path%>] .number {
+	background-color: #071e3d;
+	margin-right: 10px;
+	font-size: 1rem;
+	padding-top: 5px;
+	color: #fff;
+	text-align: center;
+	border-radius: 25px;
+	width: 25px;
+	height: 25px;
+}
+ #titre{
+ font-size : 1.6em;
+ font-weight : bolder;
+ color : white;
+ margin-top : 13px;
+ }
+ ul.menu 
+ {
+ padding-left:5em;
+ }
+ /*Taille boutons autres moyens de paiement*/
+ div.bloctxt input.image
+ {
+ height:30px;
+ }
+ /*Taille et couleur du bouton de consentement*/
+ .toggleConsentement
+ {
+ width: 60px;
+ }
+ input:checked + .slider
+ {
+ background-color: #FFA11B;
+ }
+ input:focus + .slider
+ {
+ -webkit-box-shadow: 0 0 1px #FFA11B;
+ -moz-box-shadow: 0 0 1px #FFA11B;
+ box-shadow: 0 0 1px #FFA11B;
+ }
+</style>
+</head>
+<body>
+<div id="e_fullSite">
+<table id="e_tablGeneral" class="e_fixe" summary="" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+<div class="e_widthmin"></div>
+<div id="e_utiles"></div>
+<div id="e_contenerh">
+<div id="e_header">
+<div id="e_bdHaut">
+<div id="e_logo">
+<img src="/assets/logo_monetico.FR.gif" alt="">
+</div>
+<div id="e_identification"></div>
+<p id="titre" class="fg a_titre1" style="background-color: transparent;background-image: none">Espace de paiement sécurisé par carte bancaire</p>
+<div id="e_logo_right">
+<img src="/assets/logo_cm.gif" alt="">
+</div>
+</div>
+</div>
+<table summary="" class="e_gouttieres e_nof" border="0" width="100%" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="e_colAuto">
+<div id="e_contenu">
+
+  <%=yield%>
+<script language="javascript">
+ document.body.onload = function() {
+ fill3DSv2();
+ textboxPaymentCardNumber = document.getElementById('Ecom_Payment_Card_Number');
+ if(textboxPaymentCardNumber && textboxPaymentCardNumber.style.display != 'none') {
+ textboxPaymentCardNumber.focus();
+ }
+ if (document.getElementById('Ecom_Payment_Card_Verification')) {
+ document.getElementById('Ecom_Payment_Card_Verification').maxlength = 5;
+ }
+ }
+</script>
+<div class="a_blocfctl saisir" id="pai_application_paiement">
+<table border="0" cellpadding="1" cellspacing="10">
+<tbody><tr>
+<td class="h" width="30%" id="bloc_fiche_recap">
+<div id="fiche_recap">
+<p class="c">
+<img src="/assets/ressource_prod.cgi" alt="logo commerçant">
+</p>
+<table class="fiche" border="0" width="100%" summary="Fiche">
+<tbody><tr>
+<th scope="row">Commerçant</th>
+<td>ALPHA LOCATION BUDGET (1222382)</td>
+</tr>
+<tr>
+<th scope="row">Référence</th>
+<td>002109<br></td>
+</tr>
+<tr>
+<th scope="row">Montant</th>
+<td>105 EUR</td>
+</tr>
+</tbody></table>
+<div class="blocnotes">
+<p class="note b">
+<a href="/aide.cgi?lgue=FR&amp;section=rgpd" onclick="return OnEventDisplayHelp(this.href,&#39;APPL&#39;)" target="_blank" title="Aide (nouvelle fenêtre)">
+Politique générale de conservation des données.</a>
+</p>
+</div>
+</div>
+</td>
+<td id="saisie_cb" class="h">
+<table id="pai_card_icons" width="100%">
+<tbody><tr>
+<td class="c">
+<img src="/assets/SMP_carte_cb_small.gif" alt="GIE CB" border="0">
+</td>
+<td class="c">
+<img src="/assets/SMP_carte_visa_small.gif" alt="VISA" border="0">
+</td>
+<td class="c">
+<img src="/assets/SMP_carte_eurocard_small.gif" alt="MASTERCARD" border="0">
+</td>
+<td class="c">
+<img src="/assets/SMP_carte_amex_2.gif" alt="AMEX" border="0">
+</td>
+</tr>
+</tbody></table>
+<div class="a_blocfctltitre">
+<p class="a_titre2">Montant de la transaction : 105 EUR</p>
+</div>
+<div id="error_display_area">
+<p></p>
+</div>
+<div class="a_blocfctl saisir">
+<form class="c vc" name="Cyb" method="post" onsubmit="return (CheckInput(document, &#39;false&#39;, false) &amp;&amp; CheckScheme(document, &#39;ALPHA LOCATION BUDGET n\&#39;accepte pas ce type de carte. Les cartes acceptées sont celles dont les logos apparaissent sur la page de paiement. Merci de réessayer avec une carte éligible.&#39;) &amp;&amp; uneseulefois(&#39;Traitement déjà en cours, veuillez patienter.&#39;));" action="/paiement.cgi" autocomplete="off">
+<table id="pai_card_infos" summary="" width="100%" cellpadding="0" cellspacing="0">
+<tbody>
+<tr id="tr_numero_carte">
+<td width="50%">
+<p class="titlig">
+<label for="Ecom_Payment_Card_Number">Numéro de carte bancaire</label>
+</p>
+</td>
+<td>
+<input id="Ecom_Payment_Card_Number" name="Ecom_Payment_Card_Number" value="" size="18" maxlength="30" autocomplete="off" type="tel" onblur="CheckCardNumberFormat(document, this);">
+<img id="pai_img_invalid_card_number" class="invisible" src="/assets/icocroix.png" title="Format de numéro de carte invalide" alt="Croix rouge">
+<div id="schemeChoice"></div>
+<div id="schemeIndicator" class="tooltip" style="display: none;">Cliquez ici pour changer le réseau utilisé pour ce paiement.<div class="arrow"></div></div>
+</td>
+</tr>
+<tr id="tr_date_expiration">
+<td>
+<p class="titlig">
+<label for="Ecom_Payment_Card_ExpDate_Month">Date d'expiration</label>
+</p>
+</td>
+<td>
+<select id="Ecom_Payment_Card_ExpDate_Month" style="display:" name="Ecom_Payment_Card_ExpDate_Month" onchange="CheckCardExpirationDate(document, this, Cyb.Ecom_Payment_Card_ExpDate_Year);" onkeyup="CheckCardExpirationDate(document, this, Cyb.Ecom_Payment_Card_ExpDate_Year);">
+<option value="" selected="selected">Mois</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<span id="span_Ecom_Payment_Card_ExpDate_Month_Year" style="display:">&nbsp;/&nbsp;</span>
+<select id="Ecom_Payment_Card_ExpDate_Year" name="Ecom_Payment_Card_ExpDate_Year" style="display:" onchange="CheckCardExpirationDate(document, Cyb.Ecom_Payment_Card_ExpDate_Month, this);" onkeyup="CheckCardExpirationDate(document, Cyb.Ecom_Payment_Card_ExpDate_Month, this);">
+<option value="" selected="selected">Année</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+<option value="2028">2028</option>
+<option value="2029">2029</option>
+<option value="2030">2030</option>
+<option value="2031">2031</option>
+<option value="2032">2032</option>
+<option value="2033">2033</option>
+<option value="2034">2034</option>
+<option value="2035">2035</option>
+<option value="2036">2036</option>
+<option value="2037">2037</option>
+<option value="2038">2038</option>
+<option value="2039">2039</option>
+<option value="2040">2040</option>
+<option value="2041">2041</option>
+</select>
+<img id="pai_img_invalid_card_expiration_date" class="invisible" src="/assets/icocroix.png" title="Date d&#39;expiration dépassée" alt="Croix rouge">
+</td>
+</tr>
+<tr>
+<td id="cvvtexte" style="display:">
+<p class="titlig">
+<label for="Ecom_Payment_Card_Verification">Code de vérification</label>
+</p>
+</td>
+<td id="cvvchamp" style="display:">
+<input id="Ecom_Payment_Card_Verification" name="Ecom_Payment_Card_Verification" value="" size="4" maxlength="5" onblur="CheckCryptogram(document, this, &#39;false&#39;);" autocomplete="off" type="tel">
+<a href="/aide.cgi?lgue=FR&amp;section=crypto" onclick="return OnEventDisplayHelp(this.href,&#39;APPL&#39;)" target="_blank" title="Aide (nouvelle fenêtre)"><img src="/assets/icobulle.gif" alt="" border="0" class="questcequecest"></a>
+<a href="/aide.cgi?lgue=FR&amp;section=crypto" onclick="return OnEventDisplayHelp(this.href,&#39;APPL&#39;)" target="_blank" title="Aide (nouvelle fenêtre)">Qu'est-ce que c'est ?</a>
+<img id="pai_img_invalid_cryptogram" class="invisible" src="/assets/icocroix.png" title="Format de cryptogramme invalide" alt="Croix rouge">
+</td>
+</tr>
+<input type="hidden" name="protocole_client" value="SSL">
+<input type="hidden" name="url_retour" value="https://www.payless-guyane.com">
+<input type="hidden" name="url_retour_ok" value="https://www.payless-guyane.com/paiement/effectue">
+<input type="hidden" name="url_retour_err" value="https://www.payless-guyane.com/paiement/refuse">
+<input type="hidden" name="mail" value="soeur@gmail.om">
+<input type="hidden" name="enc_textelibre" value="">
+<input type="hidden" name="version" value="3.0">
+<input type="hidden" name="enc_societe" value="7061796C657373">
+<input type="hidden" name="enc_lgue" value="4652">
+<input type="hidden" name="TPE" value="1222382">
+<input type="hidden" name="date" value="01/11/2021:12:59:22">
+<input type="hidden" name="montant" value="105EUR">
+<input type="hidden" name="enc_reference" value="303032313039">
+<input type="hidden" name="MAC" id="MAC" value="943a3941fea608f64c6a4ce6c76bb5366b3e8a37">
+<input type="hidden" name="mode_affichage_client" value="web">
+<input type="hidden" name="screenwidth" value="480">
+<input type="hidden" name="is_javascript_enabled" value="0" size="1">
+<input type="hidden" name="Ecom_Payment_Card_Type" id="Ecom_Payment_Card_Type" value="">
+<input type="hidden" name="Ecom_SchemaVersion" value="http://www.ecml.org/version/1.0" size="30">
+<input type="hidden" name="Ecom_TransactionComplete" size="1">
+</tbody>
+</table>
+<div id="messageAuthentificationAmex" style="display: none">
+<p class="messageauthamex">Vous utilisez une carte American Express ; il est possible que vous ayez à vous authentifier.</p>
+</div>
+<div class="blocboutons" style="width: 100%; margin:0 auto;">
+<table border="0" width="100%"><tbody><tr>
+<td style="text-align: right;">
+<input class="image" src="/assets/valider.gif" type="image" alt="Valider">
+</td>
+<td style="text-align: left;">
+<a style="text-decoration: none; float: left;" name="" target="_self" href="https://www.payless-guyane.com/paiement/refuse" onclick="return (uneseulefois(&#39;Traitement déjà en cours, veuillez patienter.&#39;));">
+<img src="/assets/abandonner.gif" border="0" alt="Abandonner">
+</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</form>
+<div class="bloctxt info">
+<p>
+Pour annuler votre paiement et retourner sur le site de ALPHA LOCATION BUDGET, cliquez sur le bouton Abandonner.</p>
+</div>
+<table width="100%">
+<tbody><tr>
+<td class="c">
+<img src="/assets/SecureCode_logo_reduced.gif">
+</td>
+<td class="c">
+<img src="/assets/AExp_SafeKey_Registered_120px.gif" alt="Amex Safekey">
+</td>
+<td class="c">
+<img src="/assets/VerifiedByVisa_logo_reduced.gif" alt="Verified by Visa">
+</td>
+</tr>
+</tbody></table>
+<!-- Pied de page iframe -->
+<!-- Pied de page iframe (fin) -->
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="text/javascript">
+ var token = "bfefc4c4-9e24-4f40-9f0e-306197e42b06";
+ var alias = "";
+ var index = "1";
+ var restriction_expiration_period_in_months = "-1";
+ var noschememsg = "ALPHA LOCATION BUDGET n\'accepte pas ce type de carte. Les cartes acceptées sont celles dont les logos apparaissent sur la page de paiement. Merci de réessayer avec une carte éligible.";
+ var trad_info_suppression_carte= "Votre carte @CARTE@ sera supprimée.";
+ var schemeEnabled = false;
+ var trad_restriction_scheme_refuse="Ce type de carte n&rsquo;est pas accept&eacute; par ALPHA LOCATION BUDGET, veuillez saisir une nouvelle carte.";
+ var trad_restriction_delai_exp_insuffisant="La dur&eacute;e de validit&eacute; de votre carte doit &ecirc;tre d&rsquo;au moins -1 mois.";
+ var cvv_obligatoire = 'false';
+ var trad_carte_perimee='La date de validit&eacute; de votre carte est d&eacute;pass&eacute;e.';
+ var trad_champ_cvv_incorrect='Le code de vérification doit &ecirc;tre constitu&eacute; de 3 &agrave; 5 chiffres';
+ var trad_completion_adresse='Veuillez saisir l&rsquo;adresse du titulaire de la carte.';
+ var trad_completion_code_postal='Veuillez saisir le code postal du titulaire de la carte.';
+ var trad_completion_delai_expiration='Veuillez saisir la date d&rsquo;expiration.';
+ var trad_format_pan_incorrect='Le num&eacute;ro de carte est erron&eacute;.';
+ var trad_nom_porteur_invalide='Le nom du titulaire de la carte est invalide.';
+ var trad_carte_incompatible_vpc='Les cartes de débit UnionPay ne sont pas compatibles avec ce mode de saisie manuelle. Veuillez saisir une autre carte.';
+ var trad_modif_carte_titre="Modification d'une carte";
+ var trad_suppression_carte_titre="Voulez-vous vraiement supprimer votre carte de crédit ?";
+ var trad_expiration="Date d'expiration";
+ var trad_nom_carte="Nom associé à la carte";
+ var trad_numero_carte="Num&eacute;ro de la carte";
+ var trad_suppression_impossible="Impossible de supprimer la carte";
+ var trad_modification_impossible="Impossible de modifier la carte";
+ var trad_fermer="Fermer";
+ var trad_defaut_impossible="Impossible de positionner la carte par défaut";
+ var img_modifier="/images/btn%2Dmodifier%2Dfr%2Epng";
+ var img_annuler="/images/btn%2Dannuler%2Dfr%2Epng";
+ var img_oui="/images/btn%2Doui%2Dfr%2Epng";
+ var img_non="/images/btn%2Dnon%2Dfr%2Epng";
+ var img_carte_defaut="/images/icone-etoile-pleine.png";
+ var img_carte_non_defaut="/images/icone-etoile-creuse.png";
+</script>
+<script type="text/javascript" src="/assets/paiement_ui.js"></script>
+</div>
+</td> 
+</tr>
+</tbody></table>
+<div id="e_footer">
+<div>
+<p>Les symboles : 
+<img border="0" alt="" src="/assets/verrou_1.png">
+<img border="0" alt="" src="/assets/cle_1.png">
+<img border="0" alt="" src="/assets/verrou_2.png">
+indiquent que la transaction est sécurisée.&nbsp;
+</p>
+<p class="juridique"></p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<!-- PAYLIB -->
+<form id="form_paylib" action="/paiement.cgi" method="post" autocomplete="off">
+<input type="hidden" id="paylib_action" name="paylib_action">
+<input type="hidden" name="paylib_token" value="">
+<input type="hidden" name="mode_affichage" value="">
+</form>
+</body></html>

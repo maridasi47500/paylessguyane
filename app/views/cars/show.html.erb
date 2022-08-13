@@ -1,0 +1,77 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @car.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag "/assets/"+@car.image, class: "carimage" %>
+</p>
+
+<p>
+  <strong>Categorie:</strong>
+  <%= @car.categorie %>
+</p>
+
+<p>
+  <strong>Bagages:</strong>
+  <%= @car.bagages %>
+</p>
+
+<p>
+  <strong>Clim:</strong>
+  <%= @car.clim %>
+</p>
+
+<p>
+  <strong>Manuelle:</strong>
+  <%= @car.manuelle %>
+</p>
+
+<p>
+  <strong>Essence:</strong>
+  <%= @car.essence %>
+</p>
+
+<p>
+  <strong>Portes:</strong>
+  <%= @car.portes %>
+</p>
+
+<p>
+  <strong>Places:</strong>
+  <%= @car.places %>
+</p>
+
+<p>
+  <strong>Min price (0 km inclus):</strong>
+  <%= @car.min_price %>
+</p>
+<p>
+  <strong>350 km inclus:</strong>
+  <%= @car.maxkm %>
+</p>
+<%if @car.prestations.length > 0%>
+
+  <div>
+<%=render @car.prestations%>
+  </div>
+<%end%>
+<br>
+<%if @car.options.length > 0%>
+  <div>
+<%=render @car.options%>
+  </div>
+<%end%>
+<br>
+<%if @car.assurances.length > 0%>
+  <div>
+<%=render @car.assurances%>
+  </div>
+<%end%>
+
+<br>
+<%= link_to 'Edit', edit_car_path(@car) %> |
+<%= link_to 'Back', cars_path %>

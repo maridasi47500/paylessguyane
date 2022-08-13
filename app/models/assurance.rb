@@ -1,0 +1,2 @@
+class Assurance < Option
+end

@@ -1,0 +1,83 @@
+<%= form_with(model: car, local: true) do |form| %>
+  <% if car.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(car.errors.count, "error") %> prohibited this car from being saved:</h2>
+
+      <ul>
+        <% car.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :categorie %>
+    <%= form.text_field :categorie %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bagages %>
+    <%= form.number_field :bagages %>
+  </div>
+
+  <div class="field">
+    <%= form.label :clim %>
+    <%= form.check_box :clim %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manuelle %>
+    <%= form.check_box :manuelle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :essence %>
+    <%= form.select :essence, ['essence','gasoil','diesel'], prompt: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :portes %>
+    <%= form.number_field :portes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :places %>
+    <%= form.number_field :places %>
+  </div>
+
+  <div class="field">
+    <%= form.label :min_price %>
+    <%= form.number_field :min_price %>
+  </div>
+  <div class="field">
+    <%= form.label :maxkm %>
+    <%= form.number_field :maxkm %>
+  </div>
+  <div class="field">
+    <%= form.label :prestation_ids %>
+    <%= form.collection_select :prestation_ids, Prestation.all, :id, :name,{}, {multiple: true, size: 10} %>
+  </div>
+  <div class="field">
+    <%= form.label :assurance_ids %>
+    <%= form.collection_select :assurance_ids, Assurance.all, :id, :name,{}, {multiple: true, size: 10} %>
+  </div>
+  <div class="field">
+    <%= form.label :option_ids %>
+    <%= form.collection_select :option_ids, Option.where(type: nil), :id, :name,{}, {multiple: true, size: 10} %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inventaire des voitures, articles...</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+<style>
+.littlepic {
+  width: 100px;
+  height:100px;
+}
+.carimage {
+  width: 200px;
+  height:200px;
+}
+</style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><%=link_to t('monmenu.creervoitures'), cars_path%></li>
+        <li><%=link_to t('monmenu.retourausite'), root_path%></li>
+        <li><%=link_to t('monmenu.options'), options_path%></li>
+        <li><%=link_to t('monmenu.assurance'), assurances_path%></li>
+        <li><%=link_to t('monmenu.prestations'), prestations_path%></li>
+        <li><%=link_to t('monmenu.bonsplans'), all_bonplans_path%></li>
+        <li><%=link_to t('monmenu.allarticles'), all_articles_path%></li>
+        <li>                    <a href="/articles/new" class="link  " tabindex="0">Nouvel article</a></li>
+
+      </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

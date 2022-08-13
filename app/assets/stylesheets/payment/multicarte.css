@@ -1,0 +1,265 @@
+.cardcontainer
+{
+    width:100%;
+    text-align:center;
+}
+
+.cardInfoContainer
+{
+    margin:auto;
+    position: relative;
+    top:50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.cardlist
+{
+    overflow:hidden;
+    width:auto;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.newcardcontainer
+{
+    float:left;
+    margin-right: 12px;
+    margin-left: 12px;
+
+}
+
+.newcard
+{
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+    background: #ECECEC;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #A3A3A3;
+    border-width: 2px;
+    white-space:nowrap;
+    display:table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
+
+.carditem
+{
+    width: 100px;
+    height: 120px;
+    cursor: pointer;
+    background: #ECECEC;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #A3A3A3;
+    border-width: 2px;
+    margin-right: 12px;
+    margin-left: 12px;
+    vertical-align:middle;
+    white-space:nowrap;
+    font-size:0.8em;
+}
+.carditem p, .newcard p
+{
+    text-align:center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 3px 2px 6px 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardimage
+{
+    height: 25px;
+}
+
+.cardname
+{
+    height: 12px;
+    font-weight: bold;
+}
+
+.cardholder_name
+{
+    height: 12px;
+}
+
+.cardchecked {
+    width: 110px;
+    height: 130px;
+    border-style: solid;
+    border-color: coral;
+    border-width: 2px;
+    font-size: 1em;
+}
+.cardmanager
+{
+    /*height: 68px;*/
+    width: 120px;
+    position: absolute;
+    background: #FFFFFF;
+    z-index:2;
+    border-radius:5px;
+    border-style:groove;
+    border-width:2px;
+}
+
+.closecardmanager
+{
+    position:relative;
+    top: 2px;
+    right: 10px;
+    text-align: right;
+}
+.operationoncard
+{
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align:middle;
+    white-space:nowrap;
+    display: inline;
+}
+
+.cardmanagerlink p
+{
+    text-align: center;
+}
+
+p.expiredLabel
+{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.operationoncard.expiredLabel
+{
+    display : none;
+}
+
+p.expiredLabelNone
+{
+    display : none;
+}
+
+.operations
+{
+    position: relative;
+    width: 90px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dialog-multiCB .ui-dialog-titlebar
+{
+      display: none;
+}
+.dialog-multiCB .ui-dialog,.dialog-multiCB  .ui-widget,.dialog-multiCB  .ui-widget-content,.dialog-multiCB  .ui-corner-all,.dialog-multiCB  .foo,.dialog-multiCB  .ui-draggable,.dialog-multiCB  .ui-resizable
+{
+    background:#fff !important; // we don't want jQuery to override it
+    width : "auto";
+    border:0px !important; // we don't want jQuery to override it
+}
+.dialog-multiCB
+{
+    font-weight: bold;
+    min-height: none;
+}
+#modification_carte
+{
+    background:#fff;
+    min-width : 500px;
+}
+#suppression_carte
+{
+    background:#fff;
+    min-width : 500px;
+}
+#modif_form
+{
+    margin : 50px;
+}
+#suppression_form
+{
+    margin : 50px;
+}
+.form-label
+{
+    float:left;
+    text-align:right;
+    margin-right:10px;
+    width:50%;
+}
+#bouton_suppression_non
+{
+    float:left;
+    text-align:right;
+    margin-right:10px;
+    width:50%;
+}
+
+
+#bouton_suppression a:focus {outline:0;}
+/*
+.form-label p
+{
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%))
+}
+*/
+.form-ligne
+{
+    padding: 5px;
+}
+#suppression_carte_infos
+{
+    padding: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+#img_reseau
+{
+    margin: auto;
+}
+
+a.cardDefault:hover
+{
+    cursor: Default;
+}
+
+.tooltiptext
+{
+    visibility: hidden;
+//    width: 120px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+//    left: 50%;
+//    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.operationoncard:hover .tooltiptext {
+        visibility: visible;
+    }
+.disabledOverlay
+{
+    opacity:0.3;
+}

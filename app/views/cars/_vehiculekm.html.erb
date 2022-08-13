@@ -1,0 +1,89 @@
+ <div class="col-lg-4 col-sm-6 mb-90 mb-80-md resa-car aos-init aos-animate" data-aos="zoom-in" data-carrosserie="1">
+    <div class="resa-step-1 ">
+        <article class="content-item">
+            <div class="col-top">
+                                <figure class="img-wp magnific-popup">
+                                                                    <img src="/assets/<%=car.image%>" alt="<%=car.name%>" class="img-fluid">
+
+                                                                        <a href="/uploads/article/kia-picanto-2015.jpg" class="btn-popup" data-effect="mfp-zoom-out">
+                                <i class="material-icons">image_search</i>
+                            </a>
+                                                            </figure><!-- .img-wp -->
+                                <div class="content-txt">
+                                                      <header>
+                      <h2 class="title-car"><%=car.name%> <em>ou équivalent</em></h2>
+                        <a href="<%=rentalcarcat_path(id: car.id, cat: car.categorie.parameterize)%>"><h3 class="category">Catégorie <%=car.categorie%></h3></a>
+                                            </header>
+
+                    <div class="row">
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-luggage"></span>
+            <span class="txt"><%=car.bagages%> bagages</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <%if car.clim%>
+            <div class="col-md-4 col-sm-6 col-4">
+            <div class="car-icon">
+                <span class="sprite car-clim"></span>
+                <span class="txt">Clim.</span>
+            </div><!-- .car-icon -->
+        </div><!-- .col-4  -->
+      <%end%>
+        <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-box"></span>
+            <span class="txt"><%=car.manuelle ? t('car.manuelle') : t('car.auto')%></span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-gazoil"></span>
+            <span class="txt"><%=car.essence%></span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-door"></span>
+            <span class="txt"><%=car.portes%> portes</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-people"></span>
+            <span class="txt"><%=car.places%> places</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+</div><!-- .row -->                                    </div><!-- .content-txt -->
+            </div><!-- .col-top -->
+            <div class="col-bottom">
+              <form method="get" action="<%=reservcar_path(car.id)%>">
+                            <div class="item except">
+                                <div class="checkboxradio-wp">
+                                    <input type="radio" name="type" value="sans_km" id="radio-5-1" checked="">
+                                    <label for="radio-5-1">
+                                      <span class="txt">0 km inclus : <strong class="price"><%=car.min_price%> €</strong></span>
+                                    </label>
+                                </div><!-- .checkboxradio-wp -->
+                                <a href="/reservation?debut_jour_at=08%2F11%2F2021&amp;debut_minute_at=16%3A00&amp;debut_lieu_id=1&amp;fin_jour_at=15%2F11%2F2021&amp;fin_minute_at=16%3A00&amp;fin_lieu_id=1#" class="btn-popover" data-toggle="popover" data-trigger="focus" tabindex="10" data-placement="left" title="" data-content="0,28 €/km, à régler auprès de notre agence en fin de location." data-template="&lt;div class=&#39;popover&#39; role=&#39;tooltip&#39;&gt;&lt;div class=&#39;arrow&#39;&gt;&lt;/div&gt;&lt;h3 class=&#39;popover-header&#39;&gt;&lt;/h3&gt;&lt;div class=&#39;popover-body&#39;&gt;&lt;/div&gt;&lt;/div&gt;&#39;" data-original-title="Tarif 0 km inclus">
+                                    <i class="material-icons">help_outline</i>
+                                </a>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="checkboxradio-wp">
+                                    <input type="radio" name="type" value="ligne" id="radio-5-2">
+                                    <label for="radio-5-2">
+                                      <span class="txt">350 km inclus : <strong class="price"><%=car.maxkm%> €</strong></span>
+                                    </label>
+                                </div><!-- .checkboxradio-wp -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="btn-wp">
+                                <button type="submit" class="btn-resa w-full">Réserver<i class="material-icons">arrow_forward</i></button>
+                            </div><!-- .btn-wp -->
+                        </form>
+                                                </div><!-- .col-bottom -->
+        </article><!-- .content-item -->
+    </div><!-- .resa-step-1 -->
+</div><!-- .col-lg-4  -->

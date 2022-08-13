@@ -1,0 +1,489 @@
+/* cm-cic securities v1.1 */
+table.FOND {background-color:#ffffff}
+.INFO
+{
+    FONT-SIZE: 10pt;
+    COLOR: #990000;
+    BACKGROUND-COLOR: #ffffff
+}
+.NAVLIENS
+{ margin-bottom:10px;display:block;
+  padding-bottom:2px; background:#ffffff url(images/a_menuappli_filet2.gif) left bottom repeat-x;
+}
+.NAVLIENS a.liens {display:block; float:left; margin-right:6px; border:1px solid red}
+.NAVLIENS img{vertical-align:top}
+.NAVICO
+{
+    TEXT-ALIGN: right
+}
+.FINPAGE
+{
+    VERTICAL-ALIGN: bottom;
+    HEIGHT: 30px
+}
+.AIDE
+{
+    FONT-SIZE: 8pt;
+    FONT-STYLE: italic;
+    BACKGROUND-COLOR: #ffffff
+}
+.NOTE
+{
+    FONT-SIZE: 8pt;
+    COLOR: #336699;
+    FONT-STYLE: italic;
+    BACKGROUND-COLOR: #ffffff;
+    padding:10px 0px 0px 10px;
+}
+.NOTE li {padding:0px}
+.ERREUR, .ALERTE, .MSGINFO {
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 10pt;
+   padding-left:40px !important; 
+   min-height:26px;
+   TEXT-ALIGN: left;
+   padding-bottom:10px;
+}
+.MSGINFO
+{
+    COLOR: #835848;
+    border:1px solid #BE8768; 
+    background:#F2F0EB url(../images/css/v3base/icoinfo.gif) left top no-repeat;
+}
+.MSGINFO a {COLOR: #835848}
+.ERREUR
+{
+    COLOR: #BC0624;
+    border:1px solid #BC0624; 
+    background:#F2F0EB url(../images/css/v3base/messagerror.gif) left top no-repeat !important;
+}
+
+.ERREUR a {COLOR: #BC0624}
+.ALERTE
+{
+    background:#F2F0EB url(../images/css/v3base/icoalerte.gif) left top no-repeat;
+    COLOR: #F53505 !important;
+    border:1px solid #F53505; 
+}
+.ALERTE a {COLOR: #F53505 !important;}
+
+.BORD
+{
+    COLOR: #333333; background-color:#ffffff;
+    border:1px solid #0070BA; margin-right:5px
+}
+.TITRE
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #336699;
+    BACKGROUND-COLOR: #ffffff
+}
+.TIT
+{
+    font-size:16px !important; 
+    color:#000; 
+    font-weight:bold;
+    padding:5px 0px 10px 0px; 
+    margin:0px
+}
+.SOUSTITR, .STIT
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-STYLE: normal;
+    BACKGROUND-COLOR: #ffffff
+}
+.FICHE td{width:auto}
+.BORDBULLE
+{
+    COLOR: white;
+    BACKGROUND-COLOR: #404040
+}
+.BULLE
+{
+    FONT-SIZE: 8pt;
+    COLOR: #404040;
+    BACKGROUND-COLOR: white
+}
+TD.NOTE A,
+TD.LPAIRE A,
+TD.LPL A, 
+TD.LTITLIGP A, 
+TD.LDATAP A, 
+TD.LIMPAIRE A,
+TD.LIL A, 
+TD.LTITLIGI A, 
+TD.LDATAI A, 
+TD.LTITLIG A, 
+TD.LTITLIGU A, 
+TD.LDATA A, 
+TD.LDATAU A
+{
+    FONT-SIZE: 8pt
+}
+.LIEN
+{
+    FONT-WEIGHT: bold; 
+    text-align:center
+}
+.LIEN a {
+	padding-left:5px; padding-right:5px;
+	background-color:#666666; 
+    	color:#ffffff; text-decoration:none;
+}
+.LIEN a:hover {background-color:#573535}
+.LIEN2
+{
+    FONT-WEIGHT: bold;
+    COLOR: #999999;
+    TEXT-DECORATION: underline
+}
+.LIEN:visited
+{
+    FONT-WEIGHT: bold;
+    COLOR: #444192;
+    TEXT-DECORATION: none
+}
+a.LIEN:hover
+{
+    TEXT-DECORATION: none
+}
+.LIEN3
+{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+.LIEN3:visited
+{
+    FONT-WEIGHT: bold;
+    COLOR: #336699;
+    TEXT-DECORATION: none
+}
+a.LIEN3:hover
+{
+    COLOR: #990000;
+    TEXT-DECORATION: underline
+}
+.MAIL
+{
+}
+.IMPRIM
+{
+    TEXT-ALIGN: right
+}
+.LISTE, .FICHE
+{
+    BACKGROUND-COLOR: #F7F5E6
+}
+.LTITRE, .STITRE, .FTITRE
+{
+    FONT-WEIGHT: bold;
+    COLOR:#fff;
+    padding:6px; font-size:13px;
+    BACKGROUND:#0070BA url(images/menulevel2_etirable.gif) repeat-x left top !important;
+    TEXT-ALIGN: center
+}
+a.LIENMENU:hover
+{
+    COLOR: #990000;
+    TEXT-DECORATION: underline
+}
+.LIENMENU
+{
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-DECORATION: none
+}
+.LIENMENU:visited
+{
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+.LACTIONG
+{
+    BORDER-BOTTOM: #6699cc 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.FACTIONG
+{
+    BORDER-BOTTOM: #6699cc 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.SACTIONG
+{
+    BORDER-BOTTOM: #6699cc 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.FAIDE, .LAIDE, .SAIDE
+{
+    FONT-SIZE: 8pt; padding-bottom:5px;
+    FONT-STYLE: italic; color:#666666;
+    padding-left:25px !important;
+    background:#EDEDE4 url(images/icoaide.gif) 5px 3px no-repeat;
+    background-color:#F8F6DE !important
+}
+.FINFO, .LINFO, .SINFO
+{
+    COLOR: #835848;
+    border:none;
+    padding:0px 0px 15px 30px !important;
+    background:#FCFAEC url(images/icoinfo2.gif) 5px 5px no-repeat;
+    background-color:#FBFAF2 !important
+}
+.FRUPTURE, .LRUPTURE, .SRUPTURE
+{
+    FONT-SIZE: 10pt;
+    COLOR: #7E4F17;
+    font-weight:bold;
+    height:30px;
+    background-color:#ffffff !important;
+    background:#fff url(../images/css/v3base/rupture_degrade.gif) repeat-x bottom ;
+    TEXT-ALIGN: left
+}
+.FRUPTURE a, .LRUPTURE a, .SRUPTURE a {COLOR: #7E4F17 !important}
+.LTITLIG
+{
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center
+}
+.LTITLIGU
+{
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center
+}
+.LDATA
+{
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center
+}
+.LDATAU
+{
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center
+}
+.FTITLIG
+{
+    TEXT-ALIGN: right
+}
+.FTITLIGU
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #e6e6e6
+}
+.STITLIG, .STITLIGU
+{
+    TEXT-ALIGN: right; padding-right:10px
+    
+}
+.STITLIG, .STITLIGU, .FDATA, .SDATAU
+{
+	background-color:#F7F5E6
+}
+.FDATA, .SDATAU
+{
+    FONT-WEIGHT: bold;
+}
+.FDATAU
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #e6e6e6;
+    TEXT-ALIGN: center
+}
+.SDATA
+{
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #eff7ff
+}
+
+.FUNIE, .LUNIE, .SUNIE
+{
+    BACKGROUND-COLOR: #F7F5E6 !important
+}
+.FBOUTONS, .LBOUTONS, .SBOUTONS
+{
+	background:#F7F5E6 url(images/ombre_fboutons.gif) repeat-x left top;
+}
+
+
+.SAISIE {}
+.LBOUTONS, .FBOUTONS, .SBOUTONS
+{
+    HEIGHT: 50px;
+    TEXT-ALIGN: center
+}
+.LALTU, .LSTABU, .FALTU, .FSTABU
+{
+    FONT-WEIGHT: bold;
+    COLOR: #ef3042;
+}
+.SALTP, .SSTABP, .SALTU, .SSTABU
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #ef3042;
+    BACKGROUND-COLOR: #dee1f5
+}
+
+
+
+.LIMPAIRE, .LIC, .SIMPAIRE
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #D0D0C5
+}
+.LIL, .LIR, .SIL, .SIR, .SIC
+{
+    FONT-SIZE: 8pt;
+  /*  BACKGROUND-COLOR: #ffffff;*/
+}
+.LILVALEUR
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #dee1f5
+}
+.LICVALEUR
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #dee1f5;
+    TEXT-ALIGN: center
+}
+
+
+.LTITLIGI, .LDATAI, .FIL, .FIR, .FIC, .STITLIGI, .SDATAI
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #cccccc
+}
+.FIMPAIRE, .FTITLIGI, .FDATAI
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #F1F1E6 !important
+}
+.LALTI
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #ef3042;
+    BACKGROUND-COLOR: #ffffff
+}
+.LSTABI, .SALTI, .SSTABI, .FALTI, .FSTABI
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #ef3042;
+    BACKGROUND-COLOR: #cccccc
+}
+.LPAIRE, .lpc, .LTITLIGP, .LDATAP, .FPL, .FPR, .FPC, .STITLIGP, .SDATAP, .FDATAP, .FTITLIGP
+{
+    FONT-SIZE: 8pt;
+}
+.LPL, .LPR, .SPL, .SPR, .SPC
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #E4DDD5
+}
+.FPAIRE
+{
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #F7F5E6
+}
+.LIR, .SIR, .LPR, .SPR, .FPR, .FIR 
+{
+    TEXT-ALIGN: right
+}
+.LIC, .SIC, .LPC, .SPC, .FPC, .FIC
+{
+    TEXT-ALIGN: center
+}
+.FALTP, .LSTABP, .LALTP, .FSTABP
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #ef3042;
+}
+.LTITCOIN, .FTITCOIN, .STITCOIN
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: #444192;
+    color: #ffffff;
+    TEXT-ALIGN: center
+}
+
+
+.FTITCOL, .LTITCOL, .STITCOL
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    background:#717d89 url(images/ftitcol.gif) repeat-x left top;
+    color:#333333; padding:5px;
+    background-color:#d8d1bd!important;
+    TEXT-ALIGN: center
+}
+
+.FTITTOT, .STITTOT
+{
+    BACKGROUND-COLOR: #444192;
+    color: #ffffff;
+    TEXT-ALIGN: center
+}
+.LTOTAL
+{
+    BACKGROUND-COLOR: #DECB9B; color:#333333;
+    TEXT-ALIGN: center;
+}
+.LTITTOT
+{
+    BACKGROUND-COLOR: #E5DABC; color:#333333;
+    TEXT-ALIGN: center;
+}
+.FTOTAL, .STOTAL
+{
+    BACKGROUND-COLOR: #444192;
+    color: #ffffff;
+    TEXT-ALIGN: center;
+}
+.TITRECOL
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: white;
+    BACKGROUND-COLOR: #444192;
+    TEXT-ALIGN: left
+}
+.DEK
+{
+    Z-INDEX: 200;
+    VISIBILITY: hidden;
+    POSITION: absolute
+}
+.FLASH1
+{
+    COLOR: red;
+    BACKGROUND-COLOR: #ffffcc
+}
+.SECTEUR
+{
+    COLOR: white;
+    BACKGROUND-COLOR: #f6f6f6
+}
+
+.LPAG {	text-align: right; BACKGROUND-COLOR: #ffffff; padding:2px; }
+table.FOND h2,table.fond h2 { margin:0px; font-size: 9pt; font-weight: bold; margin-left:1%; }
+/* en attendant */
+table.FOND h2,table.fond h2 { display:none; }
+A.LIEN2
+{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-DECORATION: underline
+}
+.LIEN2
+{
+    FONT-WEIGHT: bold;
+    COLOR: #ff0000;
+    TEXT-DECORATION: underline
+}

@@ -1,0 +1,42 @@
+
+    
+    <main id="main">
+        <header id="header-inner">
+            <div class="container">
+                <h1 class="title aos-init aos-animate" data-aos="zoom-in">On the road again ! Découvrez la Guyane à bord de votre voiture de location </h1>
+                                    <div class="wysiwyg-wp mt-20"><p>Les aventures sur les routes de Guyane sont à découvrir ci-dessous</p></div>
+                                <div class="mt-25 aos-init" id="resa-trigger" data-aos="fade" data-aos-delay="300">
+                    <button class="btn-a large">Réserver mon véhicule</button>
+                </div>
+            </div>
+        </header>
+        <section id="resa-inner-wp">
+  <%=render 'reservation/form'%>
+</section>
+<!-- /#resa-inner-wp -->        <div id="slick-blog-wp">
+    <div class="container">
+        <div id="slick-blog" data-aos="fade" data-aos-delay="400" class="slick-initialized slick-slider aos-init"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 255px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 255px;"><div><div style="width: 100%; display: inline-block;">
+                <div class="item">
+                    <a href="/articles/new" class="link  " tabindex="0">Nouvelle article</a>
+                </div>
+                <div class="item">
+                    <a href="/guyane" class="link  active" tabindex="0">Toutes les catégories</a>
+                </div>
+            </div></div></div></div></div></div>
+    </div>
+</div>        <!-- /#slick-blog-wp -->
+        <div class="bg-gy-a pv-50 pv-30-sm pv-20-xs">
+            <div class="container">
+
+                <div class="row">
+              <%=render partial: "guyane/article", collection: @articles, as: :article%>
+                    <!-- /.col-lg-4 -->
+                                    </div>
+                <!-- /.row -->
+            </div>
+            <div class="mt-30">
+                
+            </div>
+        </div>
+        <!-- /.bg-gy-a -->
+    </main><!-- #main-->

@@ -1,0 +1,683 @@
+<%=render "formuser", user: @user%>
+    
+    <main id="main">
+        <section id="resa-inner-wp">
+    <form action="/reservation" method="get" id="resa-search" class="">
+        <h2 class="sr-only">Réserver son véhicule</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="resa-wp">
+                        <div class="row mt-10 mt-0-xs">
+                            <div class="col-sm-6 pr-20 pr-15-md">
+                                <label class="label" for="datepicker-start">Départ</label>
+                                <div class="row">
+                                    <div class="col-lg-8 col-7">
+                                        <div class="datepicker-wp">
+                                            <input type="text" class="form-control hasDatepicker" id="datepicker-start" name="debut_jour_at" value="08/11/2021" required=""><button type="button" class="ui-datepicker-trigger"><span class="sprite arrow-select"></span></button>
+                                        </div><!-- /.datepicker-wp -->
+                                    </div>
+                                    <!-- /.col-lg-8 -->
+                                    <div class="col-lg-4 col-5 pl-0">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="hour-start" name="debut_minute_at" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                                                                            <option value="00:00">
+                                                            0h00
+                                                        </option>
+                                                                                                            <option value="00:30">
+                                                            0h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="01:00">
+                                                            1h00
+                                                        </option>
+                                                                                                            <option value="01:30">
+                                                            1h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="02:00">
+                                                            2h00
+                                                        </option>
+                                                                                                            <option value="02:30">
+                                                            2h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="03:00">
+                                                            3h00
+                                                        </option>
+                                                                                                            <option value="03:30">
+                                                            3h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="04:00">
+                                                            4h00
+                                                        </option>
+                                                                                                            <option value="04:30">
+                                                            4h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="05:00">
+                                                            5h00
+                                                        </option>
+                                                                                                            <option value="05:30">
+                                                            5h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="06:00">
+                                                            6h00
+                                                        </option>
+                                                                                                            <option value="06:30">
+                                                            6h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="07:00">
+                                                            7h00
+                                                        </option>
+                                                                                                            <option value="07:30">
+                                                            7h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="08:00">
+                                                            8h00
+                                                        </option>
+                                                                                                            <option value="08:30">
+                                                            8h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="09:00">
+                                                            9h00
+                                                        </option>
+                                                                                                            <option value="09:30">
+                                                            9h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="10:00">
+                                                            10h00
+                                                        </option>
+                                                                                                            <option value="10:30">
+                                                            10h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="11:00">
+                                                            11h00
+                                                        </option>
+                                                                                                            <option value="11:30">
+                                                            11h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="12:00">
+                                                            12h00
+                                                        </option>
+                                                                                                            <option value="12:30">
+                                                            12h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="13:00">
+                                                            13h00
+                                                        </option>
+                                                                                                            <option value="13:30">
+                                                            13h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="14:00">
+                                                            14h00
+                                                        </option>
+                                                                                                            <option value="14:30">
+                                                            14h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="15:00">
+                                                            15h00
+                                                        </option>
+                                                                                                            <option value="15:30">
+                                                            15h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="16:00" selected="">
+                                                            16h00
+                                                        </option>
+                                                                                                            <option value="16:30">
+                                                            16h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="17:00">
+                                                            17h00
+                                                        </option>
+                                                                                                            <option value="17:30">
+                                                            17h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="18:00">
+                                                            18h00
+                                                        </option>
+                                                                                                            <option value="18:30">
+                                                            18h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="19:00">
+                                                            19h00
+                                                        </option>
+                                                                                                            <option value="19:30">
+                                                            19h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="20:00">
+                                                            20h00
+                                                        </option>
+                                                                                                            <option value="20:30">
+                                                            20h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="21:00">
+                                                            21h00
+                                                        </option>
+                                                                                                            <option value="21:30">
+                                                            21h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="22:00">
+                                                            22h00
+                                                        </option>
+                                                                                                            <option value="22:30">
+                                                            22h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="23:00">
+                                                            23h00
+                                                        </option>
+                                                                                                            <option value="23:30">
+                                                            23h30
+                                                        </option>
+                                                                                                                                                </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="hour-start" title="16h00"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">16h00</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <div class="col-12 mt-10">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="place" name="debut_lieu_id" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                    <option value="1" selected="">Cayenne centre, zone Galmot</option>
+                                                                                                    <option value="2">Saint Laurent du Maroni</option>
+                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="place" title="Cayenne centre, zone Galmot"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Cayenne centre, zone Galmot</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <!-- /.col-12 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                            <div class="col-sm-6 pl-20 pl-15-md mt-10-xs">
+                                <label class="label" for="datepicker-end">Retour</label>
+                                <div class="row">
+                                    <div class="col-lg-8 col-7">
+                                        <div class="datepicker-wp">
+                                            <input type="text" class="form-control hasDatepicker" id="datepicker-end" name="fin_jour_at" value="15/11/2021" required=""><button type="button" class="ui-datepicker-trigger"><span class="sprite arrow-select"></span></button>
+                                        </div><!-- /.datepicker-wp -->
+                                    </div>
+                                    <!-- /.col-lg-8 -->
+                                    <div class="col-lg-4 col-5 pl-0">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="hour-end" name="fin_minute_at" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                                                                            <option value="00:00">
+                                                            0h00
+                                                        </option>
+                                                                                                            <option value="00:30">
+                                                            0h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="01:00">
+                                                            1h00
+                                                        </option>
+                                                                                                            <option value="01:30">
+                                                            1h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="02:00">
+                                                            2h00
+                                                        </option>
+                                                                                                            <option value="02:30">
+                                                            2h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="03:00">
+                                                            3h00
+                                                        </option>
+                                                                                                            <option value="03:30">
+                                                            3h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="04:00">
+                                                            4h00
+                                                        </option>
+                                                                                                            <option value="04:30">
+                                                            4h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="05:00">
+                                                            5h00
+                                                        </option>
+                                                                                                            <option value="05:30">
+                                                            5h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="06:00">
+                                                            6h00
+                                                        </option>
+                                                                                                            <option value="06:30">
+                                                            6h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="07:00">
+                                                            7h00
+                                                        </option>
+                                                                                                            <option value="07:30">
+                                                            7h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="08:00">
+                                                            8h00
+                                                        </option>
+                                                                                                            <option value="08:30">
+                                                            8h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="09:00">
+                                                            9h00
+                                                        </option>
+                                                                                                            <option value="09:30">
+                                                            9h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="10:00">
+                                                            10h00
+                                                        </option>
+                                                                                                            <option value="10:30">
+                                                            10h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="11:00">
+                                                            11h00
+                                                        </option>
+                                                                                                            <option value="11:30">
+                                                            11h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="12:00">
+                                                            12h00
+                                                        </option>
+                                                                                                            <option value="12:30">
+                                                            12h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="13:00">
+                                                            13h00
+                                                        </option>
+                                                                                                            <option value="13:30">
+                                                            13h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="14:00">
+                                                            14h00
+                                                        </option>
+                                                                                                            <option value="14:30">
+                                                            14h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="15:00">
+                                                            15h00
+                                                        </option>
+                                                                                                            <option value="15:30">
+                                                            15h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="16:00" selected="">
+                                                            16h00
+                                                        </option>
+                                                                                                            <option value="16:30">
+                                                            16h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="17:00">
+                                                            17h00
+                                                        </option>
+                                                                                                            <option value="17:30">
+                                                            17h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="18:00">
+                                                            18h00
+                                                        </option>
+                                                                                                            <option value="18:30">
+                                                            18h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="19:00">
+                                                            19h00
+                                                        </option>
+                                                                                                            <option value="19:30">
+                                                            19h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="20:00">
+                                                            20h00
+                                                        </option>
+                                                                                                            <option value="20:30">
+                                                            20h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="21:00">
+                                                            21h00
+                                                        </option>
+                                                                                                            <option value="21:30">
+                                                            21h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="22:00">
+                                                            22h00
+                                                        </option>
+                                                                                                            <option value="22:30">
+                                                            22h30
+                                                        </option>
+                                                                                                                                                                                                                <option value="23:00">
+                                                            23h00
+                                                        </option>
+                                                                                                            <option value="23:30">
+                                                            23h30
+                                                        </option>
+                                                                                                                                                </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-3" aria-haspopup="listbox" aria-expanded="false" data-id="hour-end" title="16h00"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">16h00</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-3" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <div class="col-12 mt-10">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="place_fin" name="fin_lieu_id" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                    <option value="1" selected="">Cayenne centre, zone Galmot</option>
+                                                                                                    <option value="2">Saint Laurent du Maroni</option>
+                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" data-id="place_fin" title="Cayenne centre, zone Galmot"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Cayenne centre, zone Galmot</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-4" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <!-- /.col-12 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="btn-wp mt-20 text-center">
+                            <button type="submit" class="btn-a large">Voir les véhicules disponibles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-md-8 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </form>
+</section>
+<!-- /#resa-inner-wp -->        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 pt-30 pt-20-xs pr-50 pr-30-lg pr-15-md aos-init aos-animate" data-aos="fade-right" data-aos-delay="100">
+                    <h1 class="h-like-a bordered">Détails <span class="c-bl-a">personnels</span></h1>
+                    <!-- /.row -->
+                    
+                    <form method="POST" action="/reservation/validation" accept-charset="UTF-8" data-parsley-validate="data-parsley-validate" novalidate="" class="parsley-validate"><input name="_token" type="hidden" value="UKshsoNWhsT6Bh2rSmMZ6KgMMzOtez95Xf0hieCT">
+                        <section class="mt-30 mt-15-xs">
+                            <header>
+                                <h2 class="h-like-d c-bl-c">Contact conducteur
+                                <button type="button" class="more-info-trigger" data-container="body" data-toggle="popover" data-placement="right" data-html="true" data-trigger="focus" title="" data-content="
+                                                &lt;p&gt;Le conducteur doit :&lt;/p&gt;
+                                                &lt;ul&gt;
+                                                    &lt;li&gt;Etre né avant le 08/11/2000&lt;/li&gt;
+                                                    &lt;li&gt;Etre titulaire du permis de conduire depuis au moins 1 an &lt;/li&gt;
+                                                &lt;/ul&gt;" data-original-title="Conducteur principal">
+                                    <i class="material-icons">help_outline</i>
+                                </button><!-- .more-info-trigger -->
+                            </h2>
+                            </header><!-- .header -->
+                            <ul>
+                                <li class="row mt-15 mt-0-xs">
+                                    <div class="col-md-6 col-sm-6 mt-10-xs">
+                                        <div class="step-3-input">
+                                            <label for="nom">Nom* :</label>
+                                            <input type="text" class="form-control" required="" name="nom" value="" id="nom" data-parsley-errors-container=".nom-error">
+                                        </div><!-- .step-3-input -->
+                                        <div class="nom-error"></div>
+                                    </div><!-- .col-md-6 -->
+                                    <div class="col-md-6 col-sm-6 mt-10-xs">
+                                        <div class="step-3-input">
+                                            <label for="prenom">Prénom* :</label>
+                                            <input type="text" class="form-control" required="" name="prenom" value="" id="prenom" data-parsley-errors-container=".prenom-error">
+                                        </div><!-- .step-3-input -->
+                                        <div class="prenom-error"></div>
+                                    </div><!-- .col-md-6 -->
+                                </li><!-- .row -->
+                                <li class="row mt-15 mt-0-xs">
+                                    <div class="col-md-6 col-sm-6 mt-10-xs ">
+                                        <div class="step-3-input">
+                                            <label for="email">Email* :</label>
+                                            <input type="text" class="form-control" required="" name="email" value="" id="email" data-parsley-errors-container=".email-error">
+                                        </div><!-- .step-3-input -->
+                                        <div class="email-error"></div>
+                                    </div><!-- .col-md-6 -->
+                                    <div class="col-md-6 col-sm-6 mt-10-xs ">
+                                        <div class="step-3-input">
+                                            <label for="phone">Téléphone* :</label>
+                                            <input type="text" class="form-control" required="" name="telephone" value="" id="phone" data-parsley-errors-container=".phone-error">
+                                        </div><!-- .step-3-input -->
+                                        <div class="phone-error"></div>
+                                    </div><!-- .col-md-6 -->
+                                </li><!-- .row -->
+                                <li class="row mt-15">
+                                    <div class="col-md-8">
+                                        <div class="step-3-input">
+                                            <label for="adress">Adresse* :</label>
+                                            <input type="text" class="form-control" required="" name="adresse" value="" id="adress" data-parsley-errors-container=".adress-error">
+                                        </div><!-- .step-3-input -->
+                                        <div class="adress-error"></div>
+                                    </div>
+                                    <!-- /.col-md-8 -->
+                                    <div class="col-md-4">
+                                        <div class="step-3-input">
+                                            <label for="postal">Code postal* :</label>
+                                            <input type="text" class="form-control" required="" name="cp" value="" id="postal" data-parsley-errors-container=".postal-error">
+                                        </div><!-- .step-3-input -->
+                                        <div class="postal-error"></div>
+                                    </div>
+                                    <!-- /.col-md-4 -->
+                                </li><!-- .row -->
+                                <li class="row mt-15 mt-0-xs">
+                                    <div class="col-md-4 col-sm-4 mt-10-xs ">
+                                        <div class="step-3-input">
+                                            <label for="ville">Ville* :</label>
+                                            <input type="text" class="form-control" required="" name="ville" value="" id="ville" data-parsley-errors-container=".ville-error">
+                                        </div><!-- .step-3-input -->
+                                        <div class="ville-error"></div>
+                                    </div><!-- .col-md-6 -->
+                                    <div class="col-md-4 col-sm-4 mt-10-xs ">
+                                        <div class="step-3-input">
+                                            <label for="pays">Pays* :</label>
+                                            <input type="text" class="form-control" required="" name="pays" value="" id="pays" data-parsley-errors-container=".pays-error">
+                                        </div><!-- .step-3-input -->
+                                        <div class="pays-error"></div>
+                                    </div><!-- .col-md-6 -->
+                                    <div class="col-md-4 col-sm-4 mt-10-xs ">
+                                        <div class="step-3-input">
+                                            <label for="datepicker-birth">Date de naissance* : </label>
+                                            <div class="datepicker-wp">
+                                                <input type="text" class="form-control input-datepicker hasDatepicker" required="" autocomplete="off" name="naissance_at" value="" data-minimum="08/11/2000" id="datepicker-birth" data-parsley-errors-container=".naissance-error"><button type="button" class="ui-datepicker-trigger"><span class="sprite arrow-select"></span></button>
+                                            </div><!-- /.datepicker-wp -->
+                                            <div class="naissance-error"></div>
+                                        </div><!-- .step-3-input -->
+                                    </div><!-- .col-md-6 -->
+                                </li><!-- .row -->
+                            </ul>
+                        </section>
+                        <section class="mt-30 mt-20-xs">
+                            <header class="header">
+                                <h2 class="h-like-d c-bl-c">Plus d'informations</h2>
+                            </header><!-- .header -->
+                            <ul>
+                                                                <li class="mt-15 mt-10-xs">
+                                    <div class="step-3-input">
+                                        <label for="vol-numero">Observations :</label>
+                                        <textarea class="form-control" id="message" rows="5" name="observation" data-parsley-errors-container=".message-error"></textarea>
+                                    </div><!-- .input input-hoshi -->
+                                    <div class="message-error"></div>
+                                </li><li>
+                            </li></ul>
+                        </section>
+                        <div class="d-block d-lg-none mt-30">
+                            <h2 class="h-like-d c-bl-c">Résumé de la commande :</h2>
+                            <section class="resa-aside mt-10">
+    <header class="header">
+        <div class="category">Catégorie B Citadine</div>
+        <h2 class="title">Hyundai I20, Kia Rio, Renault Clio <em>ou équivalent</em></h2>
+        <a href="/reservation">
+            <button class="btn-edition" type="button">
+                <i class="material-icons">edit</i>
+            </button>
+        </a>
+    </header>
+    <!-- /.header -->
+    <div class="content-wp">
+        <div class="car-wp">
+                            <figure class="img">
+                    <img src="/assets/06-18-copie-530x348.jpg" alt="location voiture en Guyane : Hyundai I20" class="img-fluid">
+                </figure>
+                        <div class="icons-wp">
+                <div class="row">
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-luggage"></span>
+            <span class="txt">3 bagages</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+            <div class="col-md-4 col-sm-6 col-4">
+            <div class="car-icon">
+                <span class="sprite car-clim"></span>
+                <span class="txt">Clim. </span>
+            </div><!-- .car-icon -->
+        </div><!-- .col-4  -->
+        <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-box"></span>
+            <span class="txt">Manuelle</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-gazoil"></span>
+            <span class="txt">Essence</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-door"></span>
+            <span class="txt">5 portes</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-people"></span>
+            <span class="txt">5 places</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+</div><!-- .row -->            </div>
+            <!-- /.icons-wp -->
+        </div>
+        <!-- /.car-wp -->
+            </div>
+    <!-- /.content-wp -->
+</section>
+<a href="/cgl" class="btn-cgv trigger-modal" data-align="modal-dialog-centered" data-size="modal-lg">Conditions générales de ventes</a>
+                        </div>
+                        <div class="resa-step-2 mt-30 mt-15-md mt-10-xs">
+                            <div class="item price-off">
+                                <div class="col-option-1">
+                                    <div class="checkboxradio-wp">
+                                        <input type="checkbox" required="" name="cgv" id="checkbox_2" value="1" data-parsley-multiple="cgv">
+                                        <label for="checkbox_2">
+                                            Au moment de la location, j'ai au minimum 1 an de permis.<br>
+                                            Et j'ai pris connaissance et j'accepte les <a href="/cgl" class="trigger-modal" style="text-decoration: underline;" data-align="modal-dialog-centered" data-size="modal-lg">conditions générales de location</a>
+                                        </label>
+                                    </div><!-- .checkboxradio-wp -->
+                                </div><!-- .col-option-1 -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item price-off">
+                                <div class="col-option-1">
+                                    <div class="checkboxradio-wp">
+                                        <input type="checkbox" name="newsletter" id="checkbox_3" value="1" data-parsley-multiple="newsletter">
+                                        <label for="checkbox_3">J'accepte de recevoir des offres commerciales de la part de Payless Guyane</label>
+                                    </div><!-- .checkboxradio-wp -->
+                                </div><!-- .col-option-1 -->
+                            </div>
+                            <!-- /.item -->
+                        </div>
+                        <div class="resa-step-2 mt-30 mt-15-md mt-10-xs">
+                            <p>Pour récupérer le véhicule, un acte de caution sera fait en agence par CB au nom du conducteur mentionné ci-dessus</p>
+                        </div>
+                        <section class="resa-step-2">
+                            <div class="item total">
+                                <div class="col-option-1">
+                                    <h3 class="title">Montant total</h3>
+                                </div><!-- .col-1 -->
+                                <div class="col-option-2">
+                                    <div class="price">105 €</div>
+                                </div><!-- .col-2 -->
+                            </div><!-- .item -->
+                            <div class="text-center mt-30 mt-20-xs">
+                                <button type="submit" class="btn-payment">
+                                    <span class="icon-left">
+                                      <i class="material-icons">lock</i>
+                                    </span>
+                                    <span class="txt">Payer maintenant</span>
+                                    <span class="icon-right">
+                                      <i class="material-icons">keyboard_arrow_right</i>
+                                    </span>
+                                </button><!-- .btn-b -->
+                                <div class="mt-10">
+                                    <small class="c-gy-c">Paiement 100% sécurisé</small>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
+                </div>
+                <!-- /.col-lg-8 -->
+                <!-- ATTENTION SUR STEP 3 CE BLOC EST MASQUE SUR MOBILE ET S'AFFICHE DANS LE CORPS DU FORM (voir ci-dessus)-->
+                <aside class="col-lg-4 d-none d-lg-block" style="">
+                    <div id="sticky-wp" class="pt-30 pt-0-md">
+                        <section class="resa-aside aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+    <header class="header">
+        <div class="category">Catégorie B Citadine</div>
+        <h2 class="title">Hyundai I20, Kia Rio, Renault Clio <em>ou équivalent</em></h2>
+        <a href="/reservation">
+            <button class="btn-edition" type="button">
+                <i class="material-icons">edit</i>
+            </button>
+        </a>
+    </header>
+    <!-- /.header -->
+    <div class="content-wp">
+        <div class="car-wp">
+                            <figure class="img">
+                    <img src="/assets/06-18-copie-530x348.jpg" alt="location voiture en Guyane : Hyundai I20" class="img-fluid">
+                </figure>
+                        <div class="icons-wp">
+                <div class="row">
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-luggage"></span>
+            <span class="txt">3 bagages</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+            <div class="col-md-4 col-sm-6 col-4">
+            <div class="car-icon">
+                <span class="sprite car-clim"></span>
+                <span class="txt">Clim. </span>
+            </div><!-- .car-icon -->
+        </div><!-- .col-4  -->
+        <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-box"></span>
+            <span class="txt">Manuelle</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-gazoil"></span>
+            <span class="txt">Essence</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-door"></span>
+            <span class="txt">5 portes</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+    <div class="col-md-4 col-sm-6 col-4">
+        <div class="car-icon">
+            <span class="sprite car-people"></span>
+            <span class="txt">5 places</span>
+        </div><!-- .car-icon -->
+    </div><!-- .col-4  -->
+</div><!-- .row -->            </div>
+            <!-- /.icons-wp -->
+        </div>
+        <!-- /.car-wp -->
+            </div>
+    <!-- /.content-wp -->
+</section>
+<a href="/cgl" class="btn-cgv trigger-modal" data-align="modal-dialog-centered" data-size="modal-lg">Conditions générales de ventes</a>
+                    </div>
+                    <!-- /#sticky-wp -->
+                </aside>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </main><!-- #main-->
+        <%=content_for :monjs do%>
+
+
+
+              <%if reservation_validation_path != request.path%>
+newuser.submit();
+
+    <%end%>
+    <%end%>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=t('monmenu.title')%></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'mystyle' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'monjs' %>
+  </head>
+  <style>
+  </style>
+
+  <body>
+    <h1 class="demesdeux">sample</h1>
+    <nav>
+    <div class="navigbar">
+    <div class="centerlogo">
+      logo
+    </div>
+    </div>
+    <ul class="navigbar">
+      <li><%=link_to t()%></li>
+      
+    </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

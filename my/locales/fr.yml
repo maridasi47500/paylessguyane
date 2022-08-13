@@ -1,0 +1,29 @@
+fr:
+  monmenu: 
+    title: Location de voitures en Guyane à prix discount
+    title1: "Location de voitures en <b>Guyane</b>"
+    vehicules: Nos véhicules
+    plans: Bons plans
+    agences: Nos agences
+    payless: Les + Payless
+    discover: Découvrez la Guyane
+    creervoitures: Ajouter des voitures
+  words:
+    yes: oui
+    no: non 
+  activerecord:
+    models: 
+      user: Utilisateur
+    attributes:
+      user:
+        nom: nom
+        prénom: prénom
+        adresse: adresse
+        telephone: téléphone
+        cp: code postal
+        ville: ville
+        pays: pays
+        naissante_at: date de naissance
+        observation: observations
+        cgv: "Au moment de la location, j'ai au minimum 1 an de permis.<br>Et j'ai pris connaissance et j'accepte les conditions générales de location"
+        newsletter: J'accepte de recevoir des offres commerciales de la part de Payless Guyane

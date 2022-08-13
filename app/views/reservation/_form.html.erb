@@ -1,0 +1,76 @@
+<form action="/reservation" method="get" id="resa-search" class="">
+        <h2 class="sr-only">Réserver son véhicule</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="resa-wp">
+                        <div class="row mt-10 mt-0-xs">
+                            <div class="col-sm-6 pr-20 pr-15-md">
+                                <label class="label" for="datepicker-start">Départ</label>
+                                <div class="row">
+                                    <div class="col-lg-8 col-7">
+                                        <div class="datepicker-wp">
+                                          <input type="text" class="form-control hasDatepicker" id="datepicker-start" name="debut_jour_at" value="<%=l((Date.today + 1.days), format: :francais)%>" required=""><button type="button" class="ui-datepicker-trigger"><span class="sprite arrow-select"></span></button>
+                                        </div><!-- /.datepicker-wp -->
+                                    </div>
+                                    <!-- /.col-lg-8 -->
+                                    <div class="col-lg-4 col-5 pl-0">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="hour-start" name="debut_minute_at" class="selectpicker" title="" required="" tabindex="-98">
+                                                <%=options_for_select((0..47).to_a.map {|x|[l(DateTime.new()+(x*30).minute, format: :label), l(DateTime.new()+(x*30).minute, format: :value)]}, l((DateTime.now.beginning_of_hour + 1.hours), format: :value))%></select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="hour-start" title="16h00"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">16h00</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <div class="col-12 mt-10">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="place" name="debut_lieu_id" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                    <option value="1" selected="">Cayenne centre, zone Galmot</option>
+                                                                                                    <option value="2">Saint Laurent du Maroni</option>
+                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="place" title="Cayenne centre, zone Galmot"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Cayenne centre, zone Galmot</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <!-- /.col-12 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                            <div class="col-sm-6 pl-20 pl-15-md mt-10-xs">
+                                <label class="label" for="datepicker-end">Retour</label>
+                                <div class="row">
+                                    <div class="col-lg-8 col-7">
+                                        <div class="datepicker-wp">
+                                            <input type="text" class="form-control hasDatepicker" id="datepicker-end" name="fin_jour_at" value="<%=l((Date.today + 8.days), format: :francais)%>" required=""><button type="button" class="ui-datepicker-trigger"><span class="sprite arrow-select"></span></button>
+                                        </div><!-- /.datepicker-wp -->
+                                    </div>
+                                    <!-- /.col-lg-8 -->
+                                    <div class="col-lg-4 col-5 pl-0">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="hour-end" name="fin_minute_at" class="selectpicker" title="" required="" tabindex="-98">
+                                                <%=options_for_select((0..47).to_a.map {|x|[l(DateTime.new()+(x*30).minute, format: :label), l(DateTime.new()+(x*30).minute, format: :value)]}, l((DateTime.now.beginning_of_hour + 1.hours), format: :value) )%>       </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-3" aria-haspopup="listbox" aria-expanded="false" data-id="hour-end" title="16h00"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">16h00</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-3" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <div class="col-12 mt-10">
+                                        <div class="selectpicker-wp">
+                                            <div class="dropdown bootstrap-select"><select id="place_fin" name="fin_lieu_id" class="selectpicker" title="" required="" tabindex="-98">
+                                                                                                    <option value="1" selected="">Cayenne centre, zone Galmot</option>
+                                                                                                    <option value="2">Saint Laurent du Maroni</option>
+                                                                                            </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" data-id="place_fin" title="Cayenne centre, zone Galmot"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Cayenne centre, zone Galmot</div></div> </div></button><div class="dropdown-menu "><div class="inner show" role="listbox" id="bs-select-4" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div><!-- .selectpicker -->
+                                        </div><!-- /.selectpicker-wp -->
+                                    </div>
+                                    <!-- /.col-12 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.col-sm-6 -->
+                        </div>
+                        <!-- /.row -->
+                        <div class="btn-wp mt-20 text-center">
+                            <button type="submit" class="btn-a large">Voir les véhicules disponibles</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-md-8 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </form>

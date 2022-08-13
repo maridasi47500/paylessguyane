@@ -1,0 +1,31 @@
+<%= form_with(model: assurance, local: true) do |form| %>
+  <% if assurance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(assurance.errors.count, "error") %> prohibited this assurance from being saved:</h2>
+
+      <ul>
+        <% assurance.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,92 @@
+#schemeButtons li {
+    height: 30px;
+    align: center;
+    vertical-align: middle;
+}
+
+#schemeButtons span {
+    background-position: center;
+}
+
+#schemeChoice
+{
+    display: inline;
+}
+
+#schemeIndicator
+{
+    height: 20px;
+    line-height: 20px;
+    min-width: 331px;
+}
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text
+{
+    padding: .1em 1.1em .1em 0.5em !important;
+}
+
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary {
+    right: .0em;
+}
+
+.ui-button-text-only .ui-button-text {
+    padding: .1em 0.3em;
+}
+
+.tooltip, .arrow:after {
+    background: grey;
+}
+
+.tooltip {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    padding: 0px 5px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 7px black;
+    opacity: 1;
+    margin-top: 5px;
+}
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 90%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    -webkit-box-shadow: 6px 5px 9px -9px grey,
+    5px 6px 9px -9px red;
+    -moz-box-shadow: 6px 5px 9px -9px grey,
+    5px 6px 9px -9px red;
+    box-shadow: 6px 5px 9px -9px grey,
+    5px 6px 9px -9px red;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+}
+
+#error_display_area {
+    display:none;
+}
+
+#error_display_area p {
+    color:#d60e0e;
+    text-align:center;
+    font-size: 1.2em;
+    padding: 0 0 0 0;
+    margin:0 0 0 0;
+}

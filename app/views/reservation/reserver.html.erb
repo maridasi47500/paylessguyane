@@ -1,0 +1,18 @@
+<!-- début de la réservation -->
+
+<%=form_with url: reservation_validation_path, html: {id: 'newuser'} do |form|%>
+  <%=form.hidden_field :id, value: params[:id]%>
+  <%=form.hidden_field :userhavecarid, value: @contract.id%>
+
+
+
+<%end%>
+
+    
+        <%=content_for :monjs do%>
+          <%if reservation_validation_path != request.path%>
+newuser.submit();
+
+    <%end%>
+    <%end%>
+
